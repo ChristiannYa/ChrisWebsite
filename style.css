@@ -4,8 +4,8 @@
 
     display: flex;
     justify-content: center;
-    position: sticky;
-    top: 1.25rem;
+    position: fixed;
+    z-index: 100;
 }
 
 #nav-ps-wrap {
@@ -13,10 +13,11 @@
     border: solid var(--brd-w) var(--brd-clr);
     border-radius: var(--brd-r);
 
+    margin-top: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
 }
 
 #nav-ps {
@@ -32,9 +33,9 @@
 #landing-page {
     border: solid 1px black;
 
-    width: 90rem;
+    width: 100%;
     height: 56.25rem;
-    margin: 0 auto;
+    margin: 10px auto;
 
     justify-content: center;
     align-items: center;
@@ -81,4 +82,59 @@
     position: absolute;
     left: 1.25rem;
     top: 1.25rem;
+}
+
+/* Works Page */
+#work-page {
+    border: solid 1px black;
+
+    width: 100%;
+    height: 56.25rem;
+    margin: 100px auto;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#works-wrap {
+    border: solid 1px blue;
+
+    width: fit-content;
+    gap: 0 3.125rem;
+
+    display: flex;
+}
+
+.work {
+    border: dotted 1px red;
+
+    width: 380px;
+    height: 620px;
+    gap: 10px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-images {
+    border: solid var(--brd-w) var(--brd-clr);
+    border-radius: var(--brd-r);
+
+    width: var(--wi-w);
+    height: var(--wi-h);
+}
+
+.work-desc {
+    border: solid var(--brd-w) var(--brd-clr);
+    border-radius: var(--brd-r);
+
+    width: var(--wd-w);
+    height: var(--wd-h);
+    gap: 4px 0;
+
+    display: flex;
+    flex-direction: column;
 }

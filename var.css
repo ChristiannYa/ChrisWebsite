@@ -22,8 +22,14 @@
     /* Text Color */
     --tc-1: #000000;
 
-    /* Border Styling */
+    /* Frame Styling */
     --brd-clr: #000000;
     --brd-r: 1.25rem;
     --brd-w: 0.125rem;
+
+    --wi-w: 22.5rem;
+    --wi-h: 23.75rem;
+
+    --wd-w: 22.5rem;
+    --wd-h: 13.125rem;
 }

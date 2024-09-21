@@ -29,6 +29,7 @@
     font-family: var(--ff-2);
     font-size: var(--fs-2);
     font-weight: var(--fw-3);
+    text-align: center;
 }
 
 /* Work Description */
@@ -36,6 +37,7 @@
     font-family: var(--ff-2);
     font-size: var(--fs-2);
     font-weight: var(--fw-1);
+    text-align: center;
 }
 
 /* Container */
@@ -43,7 +45,7 @@
     border: dotted 2px black;
 
     width: 80rem;
-    height: 45rem;
+    height: 50rem;
     margin: 0 auto;
 
     display: flex;
