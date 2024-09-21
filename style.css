@@ -1,0 +1,37 @@
+/* Preset */
+.text-preset-1 {
+    /* Hi Heading */
+    font-family: var(--ff-1);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-1);
+    letter-spacing: 10%;
+}
+
+.text-preset-2 {
+    /* Hi Paragraphs*/
+    font-family: var(--ff-2);
+    font-size: var(--fs-3);
+    font-weight: var(--fw-1);
+}
+
+.text-preset-3 {
+    /* Navigation */
+    font-family: var(--ff-2);
+    font-size: var(--fs-1);
+    font-weight: var(--fw-1);
+    letter-spacing: 5%;
+}
+
+.text-preset-4 {
+    /* Work Title */
+    font-family: var(--ff-2);
+    font-size: var(--fs-2);
+    font-weight: var(--fw-1);
+}
+
+.text-preset-4-bold {
+    /* Work Paragraph */
+    font-family: var(--ff-2);
+    font-size: var(--fs-2);
+    font-weight: var(--fw-3);
+}

@@ -1,0 +1,28 @@
+:root {
+    /* Font Weight */
+    --ff-1: "Just Another Hand", system-ui;
+    --ff-2: "Roboto Mono", system-ui;
+
+    /* Font Size */
+    --fs-1: 1rem;
+    --fs-2: 1.125rem;
+    --fs-3: 1.625rem;
+    --fs-4: 4.5rem;
+
+    /* Font Weight */
+    --fw-1: 400;
+    --fw-2: 600;
+    --fw-3: 700;
+
+    /* Background Color */
+    --bc-1: #607186;
+    --crd-bg-2: #F3EAEA;
+    --fbc-3: #263238;
+
+    /* Text Color */
+    --tc-1: #000000;
+
+    /* Border Styling */
+    --brd-clr: #000000;
+    --brd-w: 2px;
+}
