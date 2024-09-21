@@ -1,0 +1,52 @@
+/* Hi Heading */
+.text-preset-1 {
+    font-family: var(--ff-1);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-1);
+    text-align: center;
+    line-height: 80px;
+    letter-spacing: .2rem;
+}
+
+/* Hi Paragraphs*/
+.text-preset-2 {
+    font-family: var(--ff-2);
+    font-size: var(--fs-3);
+    font-weight: var(--fw-1);
+    text-align: center;
+}
+
+/* Navigation */
+.text-preset-3 {
+    font-family: var(--ff-2);
+    font-size: var(--fs-1);
+    font-weight: var(--fw-1);
+    letter-spacing: 5%;
+}
+
+/* Work Title */
+.text-preset-4-bold {
+    font-family: var(--ff-2);
+    font-size: var(--fs-2);
+    font-weight: var(--fw-3);
+}
+
+/* Work Description */
+.text-preset-4 {
+    font-family: var(--ff-2);
+    font-size: var(--fs-2);
+    font-weight: var(--fw-1);
+}
+
+/* Container */
+.container {
+    border: dotted 2px black;
+
+    width: 80rem;
+    height: 45rem;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

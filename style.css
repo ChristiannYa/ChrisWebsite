@@ -1,37 +1,84 @@
-/* Preset */
-.text-preset-1 {
-    /* Hi Heading */
-    font-family: var(--ff-1);
-    font-size: var(--fs-4);
-    font-weight: var(--fw-1);
-    letter-spacing: 10%;
+/* Top Navigation */
+#nav-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 1.25rem;
 }
 
-.text-preset-2 {
-    /* Hi Paragraphs*/
-    font-family: var(--ff-2);
-    font-size: var(--fs-3);
-    font-weight: var(--fw-1);
+#nav-ps-wrap {
+    background-color: var(--bc-1);
+    border: solid var(--brd-w) var(--brd-clr);
+    border-radius: var(--brd-r);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
 }
 
-.text-preset-3 {
-    /* Navigation */
-    font-family: var(--ff-2);
-    font-size: var(--fs-1);
-    font-weight: var(--fw-1);
-    letter-spacing: 5%;
+#nav-ps {
+    gap: 1.5625rem;
+    margin: 0.125rem 1.125rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.text-preset-4 {
-    /* Work Title */
-    font-family: var(--ff-2);
-    font-size: var(--fs-2);
-    font-weight: var(--fw-1);
+/* Landing Page */
+#landing-page {
+    border: solid 1px black;
+
+    width: 90rem;
+    height: 56.25rem;
+    margin: 0 auto;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-.text-preset-4-bold {
-    /* Work Paragraph */
-    font-family: var(--ff-2);
-    font-size: var(--fs-2);
-    font-weight: var(--fw-3);
+#intro-container {
+    width: fit-content;
+    max-width: 100%;
+    height: 100%;
+    gap: 0 6.25rem;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+#intro-text {
+    width: 32.5rem;
+    gap: 0.625rem 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#intro-ps {
+    display: flex;
+    flex-direction: column;
+}
+
+#my-frame {
+    border: solid var(--brd-w) var(--brd-clr);
+    border-radius: calc(var(--brd-r) * 10);
+
+    width: 28.125rem;
+    height: 28.75rem;
+
+    position: relative;
+    overflow: hidden;
+}
+
+#my-frame img {
+    position: absolute;
+    left: 1.25rem;
+    top: 1.25rem;
 }

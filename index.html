@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="var.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="presets.css">
     <script src="script.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +22,16 @@
 
 <body>
     <!-- Top Navigation -->
-    <nav id="top-nav">
-        <div id="nav-links">
-            <p>Home</p>
-            <p>Work</p>
-            <p>Skills</p>
-            <p>Socials</p>
-        </div>
-    </nav>
+    <div id="nav-container">
+        <nav id="nav-ps-wrap">
+            <div class="text-preset-3" id="nav-ps">
+                <p>Home</p>
+                <p>Work</p>
+                <p>Skills</p>
+                <p>Socials</p>
+            </div>
+        </nav>
+    </div>
 
     <!-- Landing Page -->
     <div id="landing-page">
@@ -37,30 +40,32 @@
 
                 <!-- Text Introduction Wrap -->
                 <div id="intro-container">
-                    <p>Hi There! I'm Christian</p>
-                    <span id="intro-ps">
-                        <p>
-                            ... Front-End Web Developer and Designer. Committed to deliver an engaging, user-friendly
-                            web experience that seamlessly blends art and function.
-                        </p>
-                        <p>
-                            When I'm not immersed in design, you'll find me having a walk with my dogs, listening to
-                            music, cooking, and playing chess. I am also a huge Anime fan.
-                        </p>
-                        <p>
-                            Whether you are a small business or large company, I'm committed to making your projects
-                            grow and succeed.
-                        </p>
+                    <span id="intro-text">
+                        <p class="text-preset-1">Hi There!</br>I'm Christian</p>
+                        <span class="text-preset-2" id="intro-ps">
+                            <p>
+                                ... Front-End Web Developer and Designer. Committed to deliver an engaging,
+                                user-friendly web experience that seamlessly blends art and function.
+                            </p>
+                            <p>
+                                When I'm not immersed in design, you'll find me having a walk with my dogs, listening to
+                                music, cooking, and playing chess. I am also a huge Anime fan.
+                            </p>
+                            <p>
+                                Whether you are a small business or large company, I'm committed to making your projects
+                                grow and succeed.
+                            </p>
+                        </span>
                     </span>
 
                     <!-- Photo Frame -->
-                    <div id="me-container">
+                    <div id="my-frame">
                         <div id="my-photo-frame">
-                            <img src="" alt="My Photo">
+                            <img src="images/me.png" alt="My Photo">
                         </div>
                     </div>
-
                 </div> <!-- Introduction Container -->
+
             </div> <!-- Container -->
         </div> <!-- Body Background -->
     </div> <!-- Landing Page-->
