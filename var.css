@@ -16,7 +16,7 @@
 
     /* Background Color */
     --bc-1: #A89D8C;
-    --crd-bg-2: #F3EAEA;
+    --crd-bc: #F3EAEA;
     --fbc-3: #263238;
 
     /* Text Color */
@@ -32,4 +32,8 @@
 
     --wd-w: 22.5rem;
     --wd-h: 13.125rem;
+
+    --card-w: 16.25rem;
+    --card-h: 31.25rem;
+    --card-i: 13.75rem;
 }
