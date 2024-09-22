@@ -42,8 +42,6 @@
 
 /* Container */
 .container {
-    border: dotted 2px black;
-
     width: 80rem;
     height: 50rem;
     margin: 0 auto;

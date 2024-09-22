@@ -92,6 +92,7 @@
     height: 56.25rem;
     margin: 6.25rem auto;
 
+    display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -113,6 +114,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .work-images {
@@ -135,6 +137,16 @@
     flex-direction: column;
 }
 
+#soon {
+    position: relative;
+    overflow: hidden;
+}
+
+#soon img {
+    position: absolute;
+    bottom: 0;
+}
+
 /* Skills Page */
 #skills-page {
     border: solid 1px black;
@@ -143,6 +155,7 @@
     height: 56.25rem;
     margin: 100px auto;
 
+    display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -220,4 +233,38 @@
 
     position: absolute;
     z-index: 16;
+}
+
+#skills-floor {
+    border-bottom: solid var(--brd-w) var(--brd-clr);
+
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer Section */
+footer {
+    border: solid 1px black;
+    background-color: var(--fbc);
+
+    width: 100%;
+    height: 15.5rem;
+    margin: 100px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#social-icons {
+    gap: 0 12.5rem;
+
+    display: flex;
+}
+
+#social-icons img {
+    background-color: var(--fbc);
+    border: solid var(--brd-w) var(--brd-clr);
+    border-radius: var(--brd-r);
 }
