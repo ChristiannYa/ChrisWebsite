@@ -1,0 +1,49 @@
+.card-one {
+    transform: rotate(-30deg);
+
+    top: 28.125rem;
+    left: 21.25rem;
+
+    position: absolute;
+    z-index: 20;
+}
+
+.card-two {
+    transform: rotate(-15deg);
+
+    top: 28.125rem;
+    left: 27.5rem;
+
+    position: absolute;
+    z-index: 19;
+}
+
+.card-three {
+    transform: rotate(0deg);
+
+    top: 30rem;
+    left: 33rem;
+
+    position: absolute;
+    z-index: 18;
+}
+
+.card-four {
+    transform: rotate(15deg);
+
+    top: 32.5rem;
+    left: 36.25rem;
+
+    position: absolute;
+    z-index: 17;
+}
+
+.card-five {
+    transform: rotate(30deg);
+
+    top: 35rem;
+    left: 37.5rem;
+
+    position: absolute;
+    z-index: 16;
+}
