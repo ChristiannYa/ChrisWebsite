@@ -11,7 +11,7 @@
 }
 
 .card-one.active {
-    transform: rotate(-30deg) translateY(-150px);
+    transform: rotate(-30deg) translateY(-9.375rem);
 }
 
 /* Card Number Two */
@@ -27,7 +27,7 @@
 }
 
 .card-two.active {
-    transform: rotate(-15deg) translateY(-150px);
+    transform: rotate(-15deg) translateY(-9.375rem);
 }
 
 /* Card Number Three */
@@ -43,7 +43,7 @@
 }
 
 .card-three.active {
-    transform: rotate(0deg) translateY(-150px);
+    transform: rotate(0deg) translateY(-9.375rem);
 }
 
 /* Card Number Four */
@@ -59,7 +59,7 @@
 }
 
 .card-four.active {
-    transform: rotate(15deg) translateY(-140px);
+    transform: rotate(15deg) translateY(-8.75rem);
 }
 
 /* Card Number Five */
@@ -75,5 +75,5 @@
 }
 
 .card-five.active {
-    transform: rotate(30deg) translateY(-140px);
+    transform: rotate(30deg) translateY(-8.75rem);
 }

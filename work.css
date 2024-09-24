@@ -1,5 +1,5 @@
 .work-image {
-    filter: drop-shadow(0px 8px 3px rgba(0, 0, 0, .25));
+    filter: drop-shadow(0rem .5rem .15rem rgba(0, 0, 0, .25));
 }
 
 /* Work Number One */
