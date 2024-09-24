@@ -19,10 +19,9 @@
 /* Navigation */
 .text-preset-3 {
     font-family: var(--ff-2);
-    font-size: var(--fs-1);
+    font-size: var(--fs-0);
     font-weight: var(--fw-1);
     color: var(--tc-1);
-    letter-spacing: 5%;
 }
 
 /* Work Title */

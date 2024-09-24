@@ -22,15 +22,16 @@
 
 </head>
 
-<body>
+<body id="body">
     <!-- Top Navigation -->
     <div id="nav-container">
-        <nav id="nav-ps-wrap">
-            <div class="text-preset-3" id="nav-ps">
-                <p>Home</p>
-                <p>Work</p>
-                <p>Skills</p>
-                <p>Socials</p>
+        <nav id="nav-as-wrap">
+            <div id="nav-as">
+                <a class="text-preset-3" href="#body">Home</a>
+                <a class="text-preset-3" href="#work-page">Work</a>
+                <a class="text-preset-3" href="#skills-page">Skills</a>
+                <a class="text-preset-3" href="#footer">Socials</a>
+
             </div>
         </nav>
     </div>
@@ -42,7 +43,7 @@
             <!-- Text Introduction Wrap -->
             <div id="intro-container">
                 <span id="intro-text">
-                    <p class="text-preset-1">Hi There! </br>I'm Christian</p>
+                    <p class="text-preset-1">Hi</br>Im Christian</p>
                     <span class="text-preset-2" id="intro-ps">
                         <p>
                             ... <span class="highlight">Front-End Web Developer</span> and <span class="highlight">UI
@@ -215,11 +216,17 @@
         </div> <!-- Container -->
     </div> <!-- Skills Page -->
 
-    <footer>
+    <footer id="footer">
         <div id="social-icons">
-            <img src="icons/github-icon.svg" alt="Github icon">
-            <img src="icons/gmail-icon.svg" alt="Gmail icon">
-            <img src="icons/phone-icon.svg" alt="Phone Number icon">
+            <a href="mailto:chris.lopez.webdev@gmail.com" target="_blank" rel="noopener noreferrer"
+                title="Send an email">
+                <img src="icons/gmail-icon.svg" alt="Gmail icon">
+                <p class="text-preset-3">Gmail</p>
+            </a>
+            <a href=" https://github.com/ChristiannYa" target="_blank" rel="noopener noreferrer">
+                <img src="icons/github-icon.svg" alt="Github icon">
+                <p class="text-preset-3">Github</p>
+            </a>
         </div>
     </footer>
 
