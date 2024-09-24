@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris's Website</title>
 
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="var.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="presets.css">
     <link rel="stylesheet" href="work.css">
     <link rel="stylesheet" href="cards.css">
-    <!-- <script src="script.js" defer></script> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +43,7 @@
             <!-- Text Introduction Wrap -->
             <div id="intro-container">
                 <span id="intro-text">
-                    <p class="text-preset-1">Hi</br>Im Christian</p>
+                    <p class="text-preset-1">Hi! I am Christian</p>
                     <span class="text-preset-2" id="intro-ps">
                         <p>
                             ... <span class="highlight">Front-End Web Developer</span> and <span class="highlight">UI
@@ -160,57 +160,82 @@
 
     <!-- Skills Page -->
     <div class="body-background page" id="skills-page">
-        <div class="container">
+        <div class="container skills-page">
             <p class="text-preset-6 page-title">Skills</p>
 
             <!-- Card Number One -->
-            <div class="card card-one">
-                <span class="card-title">
-                    <img src="icons/html-icon.svg" alt="HTML logo icon">
-                    <p class="text-preset-5">
-                        HTML
-                    </p>
-                </span>
+            <div class="card card-one" data-card="one">
+                <div class="card-content">
+                    <span class="card-title">
+                        <img src="icons/html-icon.svg" alt="HTML logo icon">
+                        <p class="text-preset-5">
+                            HTML
+                        </p>
+                    </span>
+                    <span class="percent text-preset-5">
+                        <p>100%</p>
+                    </span>
+                </div>
             </div>
 
             <!-- Card Number Two -->
-            <div class="card card-two">
-                <span class="card-title">
-                    <img src="icons/js-icon.svg" alt="JS logo icon">
-                    <p class="text-preset-5">
-                        JS
-                    </p>
-                </span>
+            <div class="card card-two" data-card="two">
+                <div class="card-content">
+                    <span class="card-title">
+                        <img src="icons/js-icon.svg" alt="JS logo icon">
+                        <p class="text-preset-5">
+                            JS
+                        </p>
+                    </span>
+                    <span class="percent text-preset-5">
+                        <p>60%</p>
+                    </span>
+                </div>
             </div>
 
             <!-- Card Number Three -->
-            <div class="card card-three">
-                <span class="card-title">
-                    <img src="icons/figma-icon.svg" alt="Figma logo icon">
-                    <p class="text-preset-5">
-                        Figma
-                    </p>
-                </span>
+            <div class="card card-three" data-card="three">
+                <div class="card-content">
+                    <span class="card-title">
+                        <img src="icons/figma-icon.svg" alt="Figma logo icon">
+                        <p class="text-preset-5">
+                            Figma
+                        </p>
+                    </span>
+                    <span class="percent text-preset-5">
+                        <p>80%</p>
+                    </span>
+                </div>
             </div>
 
             <!-- Card Number Four -->
-            <div class="card card-four">
-                <span class="card-title">
-                    <img src="icons/css-icon.svg" alt="CSS logo icon">
-                    <p class="text-preset-5">
-                        CSS
-                    </p>
-                </span>
+            <div class="card card-four" data-card="four">
+                <div class="card-content">
+                    <span class="card-title">
+                        <img src="icons/css-icon.svg" alt="CSS logo icon">
+                        <p class="text-preset-5">
+                            CSS
+                        </p>
+                    </span>
+                    <span class="percent text-preset-5">
+                        <p>100%</p>
+                    </span>
+                </div>
             </div>
 
             <!-- Card Number Five -->
-            <div class="card card-five">
-                <span class="card-title">
-                    <img src="icons/git-icon.svg" alt="Git logo icon">
-                    <p class="text-preset-5">
-                        Git
-                    </p>
-                </span>
+            <div class="card card-five" data-card="five">
+                <div class="card-content">
+                    <span class="card-title">
+                        <img src="icons/github-icon.svg" alt="Github logo icon">
+                        <p class="text-preset-5">
+                            Github
+                        </p>
+                    </span>
+                    <span class="percent text-preset-5">
+                        <p>85%</p>
+                    </span>
+                </div>
             </div>
 
         </div> <!-- Container -->

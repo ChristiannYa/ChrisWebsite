@@ -1,49 +1,79 @@
+/* Card Number One */
 .card-one {
     transform: rotate(-30deg);
+    transition: transform 0.3s ease;
 
     top: 20.125rem;
-    left: 21.25rem;
+    left: 19.25rem;
 
     position: absolute;
     z-index: 20;
 }
 
+.card-one.active {
+    transform: rotate(-30deg) translateY(-150px);
+}
+
+/* Card Number Two */
 .card-two {
     transform: rotate(-15deg);
+    transition: transform 0.3s ease;
 
     top: 20.125rem;
-    left: 27.5rem;
+    left: 25.5rem;
 
     position: absolute;
     z-index: 19;
 }
 
+.card-two.active {
+    transform: rotate(-15deg) translateY(-150px);
+}
+
+/* Card Number Three */
 .card-three {
     transform: rotate(0deg);
+    transition: transform 0.3s ease;
 
     top: 22rem;
-    left: 33rem;
+    left: 31rem;
 
     position: absolute;
     z-index: 18;
 }
 
+.card-three.active {
+    transform: rotate(0deg) translateY(-150px);
+}
+
+/* Card Number Four */
 .card-four {
     transform: rotate(15deg);
+    transition: transform 0.3s ease;
 
-    top: 24.5rem;
-    left: 36.25rem;
+    top: 25.5rem;
+    left: 37.25rem;
 
     position: absolute;
     z-index: 17;
 }
 
+.card-four.active {
+    transform: rotate(15deg) translateY(-140px);
+}
+
+/* Card Number Five */
 .card-five {
     transform: rotate(30deg);
+    transition: transform 0.3s ease;
 
-    top: 28rem;
-    left: 37.5rem;
+    top: 30rem;
+    left: 41rem;
 
     position: absolute;
     z-index: 16;
+}
+
+.card-five.active {
+    transform: rotate(30deg) translateY(-140px);
 }
