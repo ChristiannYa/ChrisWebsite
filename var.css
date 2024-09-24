@@ -15,12 +15,17 @@
     --fw-3: 700;
 
     /* Background Color */
-    --bc-1: #A89D8C;
+    --bc-1: #383A52;
     --crd-bc: #F3EAEA;
-    --fbc: #263238;
+    --fbc: #4BC2B7;
 
     /* Text Color */
     --tc-1: #000000;
+    --tc-2: #CFC7C7;
+    --tc-3: #4BC2B7;
+    --tc-4: #A89D8C;
+    --tc-5: rgba(255, 255, 255, 0.3);
+
 
     /* Frame Styling */
     --brd-clr: #000000;

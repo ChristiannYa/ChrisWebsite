@@ -4,15 +4,17 @@
     font-size: var(--fs-4);
     font-weight: var(--fw-1);
     text-align: center;
+    color: var(--tc-2);
     line-height: 80px;
-    letter-spacing: .2rem;
+    letter-spacing: .3rem;
 }
 
-/* Hi Paragraphs, Card Titles*/
+/* Hi Paragraphs */
 .text-preset-2 {
     font-family: var(--ff-2);
     font-size: var(--fs-3);
     font-weight: var(--fw-1);
+    color: var(--tc-5);
     text-align: center;
 }
 
@@ -21,6 +23,7 @@
     font-family: var(--ff-2);
     font-size: var(--fs-1);
     font-weight: var(--fw-1);
+    color: var(--tc-1);
     letter-spacing: 5%;
 }
 
@@ -29,6 +32,7 @@
     font-family: var(--ff-2);
     font-size: var(--fs-2);
     font-weight: var(--fw-3);
+    color: var(--tc-2);
     text-align: center;
 }
 
@@ -37,7 +41,22 @@
     font-family: var(--ff-2);
     font-size: var(--fs-2);
     font-weight: var(--fw-1);
+    color: var(--tc-5);
     text-align: center;
+}
+
+/* Card Titles */
+.text-preset-5 {
+    font-family: var(--ff-2);
+    font-size: var(--fs-2);
+    font-weight: var(--fw-2);
+    color: var(--tc-1);
+    text-align: center;
+}
+
+/* Highlight */
+.highlight {
+    font-weight: var(--fw-2);
 }
 
 /* Container */
