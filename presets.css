@@ -16,6 +16,14 @@
     text-align: center;
 }
 
+.text-preset-2-bold {
+    font-family: var(--ff-2);
+    font-size: var(--fs-3);
+    font-weight: var(--fw-2);
+    color: var(--tc-2);
+    text-align: center;
+}
+
 /* Navigation */
 .text-preset-3 {
     font-family: var(--ff-2);
