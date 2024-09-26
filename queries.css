@@ -102,8 +102,8 @@
     }
 
     #my-frame {
-        width: 340px;
-        height: 348px;
+        width: 21.25rem;
+        height: 21.75rem;
     }
 
     #intro-text>p {
@@ -115,6 +115,10 @@
         flex-direction: column;
 
         padding-top: 4rem;
+    }
+
+    #work-page>p:nth-child(1) {
+        margin-bottom: -1.1rem;
     }
 
     #works-wrap {
