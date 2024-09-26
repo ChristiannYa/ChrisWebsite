@@ -1,7 +1,7 @@
 :root {
     /* Font Weight */
-    --ff-1: "Just Another Hand", system-ui;
-    --ff-2: "Roboto Mono", system-ui;
+    --ff-1: "Roboto Mono", system-ui;
+    --ff-2: "Nunito", sans-serif;
 
     /* Font Size */
     --fs-0: .9rem;

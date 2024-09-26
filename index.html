@@ -7,17 +7,21 @@
     <title>Chris's Website</title>
 
     <script src="script.js" defer></script>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="var.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="presets.css">
     <link rel="stylesheet" href="work.css">
     <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="queries.css">
+    <link rel="stylesheet" href="cardQs.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
 
 </head>
@@ -30,8 +34,6 @@
                 <a class="text-preset-3" href="#body">Home</a>
                 <a class="text-preset-3" href="#work-page">Work</a>
                 <a class="text-preset-3" href="#skills-page">Skills</a>
-                <a class="text-preset-3" href="#footer">Socials</a>
-
             </div>
         </nav>
     </div>
@@ -46,7 +48,8 @@
                     <p class="text-preset-1">Hi! I am Christian</p>
                     <span class="text-preset-2" id="intro-ps">
                         <p>
-                            ... <span class="highlight">Front-End Web Developer</span> and <span class="highlight">UI
+                            <span id="dots">...</span> <span class="highlight">Front-End Web Developer</span> and <span
+                                class="highlight">UI
                                 Designer</span>; committed to deliver an engaging, user-friendly web experience that
                             seamlessly blends art and function.
                         </p>
@@ -74,6 +77,7 @@
 
     <!-- Works Page -->
     <div class="body-background page" id="work-page">
+        <p class="text-preset-6 page-title-m">Work</p>
         <div class="container">
 
             <p class="text-preset-6 page-title">Work</p>
@@ -161,6 +165,7 @@
 
     <!-- Skills Page -->
     <div class="body-background page" id="skills-page">
+        <p class="text-preset-6 page-title-m">Skills</p>
         <div class="container skills-page">
             <p class="text-preset-6 page-title">Skills</p>
 
@@ -183,13 +188,13 @@
             <div class="card card-two" data-card="two">
                 <div class="card-content">
                     <span class="card-title">
-                        <img src="icons/js-icon.svg" alt="JS logo icon">
+                        <img src="icons/js-icon.svg" alt="Java Script logo icon" style="width: 50px; height: 50px;">
                         <p class="text-preset-5">
                             JS
                         </p>
                     </span>
                     <span class="percent text-preset-5">
-                        <p>55%</p>
+                        <p>60%</p>
                     </span>
                 </div>
             </div>
@@ -244,8 +249,8 @@
 
     <!-- Why Hire Me Page -->
     <div class="body-background page" id="why-page">
+        <p class="text-preset-6 page-title-m">Why Hire Me?</p>
         <div class="container">
-
             <div id="why-hero">
                 <p class="text-preset-6 page-title">
                     Why Hire Me?

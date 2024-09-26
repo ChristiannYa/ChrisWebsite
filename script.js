@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
+function enableHoverEffects() {
     const skillsPage = document.querySelector('.skills-page');
     const cards = document.querySelectorAll('.card');
 
-    // Overall effect
+    // Overall hover effect
     skillsPage.addEventListener('mouseenter', () => {
         cards.forEach(card => {
             card.classList.add('active');
@@ -25,5 +25,29 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.remove('extra-active');
         });
     });
-});
+}
 
+function checkScreenSize() {
+    if (window.innerWidth >= 426) {
+        enableHoverEffects();
+    } else {
+        // Remove event listeners and classes when screen size is less than 426px
+        const skillsPage = document.querySelector('.skills-page');
+        const cards = document.querySelectorAll('.card');
+
+        skillsPage.removeEventListener('mouseenter', () => { });
+        skillsPage.removeEventListener('mouseleave', () => { });
+
+        cards.forEach(card => {
+            card.removeEventListener('mouseenter', () => { });
+            card.removeEventListener('mouseleave', () => { });
+            card.classList.remove('active', 'extra-active');
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    checkScreenSize();
+
+    window.addEventListener('resize', checkScreenSize);
+});

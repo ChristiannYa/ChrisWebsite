@@ -1,0 +1,60 @@
+@media only screen and (min-width: 710px) and (max-width: 1024px) {
+    .card {
+        width: 210px;
+        height: 404px;
+    }
+
+    .card-title {
+        width: 110px;
+    }
+
+    /* Card Number One */
+    .card-one {
+        top: 21.125rem;
+        left: 9.25rem;
+    }
+
+    .card-one.active {
+        transform: rotate(-30deg) translateY(-5.375rem);
+    }
+
+    /* Card Number Two */
+    .card-two {
+        top: 21.125rem;
+        left: 14.5rem;
+    }
+
+    .card-two.active {
+        transform: rotate(-15deg) translateY(-5.375rem);
+    }
+
+    /* Card Number Three */
+    .card-three {
+        top: 23rem;
+        left: 19rem;
+    }
+
+    .card-three.active {
+        transform: rotate(0deg) translateY(-5.375rem);
+    }
+
+    /* Card Number Four */
+    .card-four {
+        top: 25.5rem;
+        left: 21.5rem;
+    }
+
+    .card-four.active {
+        transform: rotate(15deg) translateY(-5.75rem);
+    }
+
+    /* Card Number Five */
+    .card-five {
+        top: 28rem;
+        left: 22rem;
+    }
+
+    .card-five.active {
+        transform: rotate(30deg) translateY(-5.75rem);
+    }
+}

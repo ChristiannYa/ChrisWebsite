@@ -1,0 +1,231 @@
+/* Tablet Screen */
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+
+    .page-title {
+        align-self: center;
+    }
+
+    #nav-as {
+        gap: 0 3rem;
+        padding: .2rem 0;
+    }
+
+    /* Landing Page */
+    #landing-page {
+        margin-top: 4rem;
+    }
+
+    #intro-container {
+        flex-direction: column;
+    }
+
+    #intro-text {
+        width: 100%;
+    }
+
+    #my-frame {
+        margin-top: 3rem;
+    }
+
+    /* Works Page */
+    #works-wrap {
+        grid-template-columns: 23rem 23rem;
+    }
+
+    /* Why Page */
+    #why-page {
+        margin-top: 2rem;
+    }
+
+    #why-hero p:nth-child(2) {
+        text-align: center;
+    }
+
+    /* Different Page */
+    #why-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: min-content;
+        gap: 0 2rem;
+    }
+
+    .why-text>p:nth-child(1) {
+        text-align: center;
+    }
+
+    .why-text>p:nth-child(2) {
+        text-align: center;
+    }
+}
+
+/* Phone Screens */
+@media only screen and (max-width: 426px) {
+    .page {
+        margin-top: 0rem;
+    }
+
+    #nav-as a:hover:after {
+        width: 0rem;
+    }
+
+
+    body {
+        padding-bottom: 0;
+    }
+
+    .container {
+        width: 98%;
+    }
+
+    .page-title-m {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .page-title {
+        display: none;
+    }
+
+    /* Landing Page */
+    #landing-page {
+        margin-top: 2rem;
+    }
+
+    #intro-container {
+        flex-direction: column-reverse;
+    }
+
+    #dots {
+        display: none;
+    }
+
+    #my-frame {
+        width: 340px;
+        height: 348px;
+    }
+
+    #intro-text>p {
+        padding: 1rem 0;
+    }
+
+    /* Work Page */
+    #work-page {
+        flex-direction: column;
+
+        padding-top: 4rem;
+    }
+
+    #works-wrap {
+        width: 100%;
+        margin-top: 0;
+
+        display: flex;
+        overflow-x: auto;
+
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #works-wrap::-webkit-scrollbar {
+        display: none;
+    }
+
+    .work {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+        width: calc(100% - 2rem);
+        max-width: 23.75rem;
+    }
+
+    .work-images {
+        width: 22rem;
+    }
+
+    /* Skills Page */
+    #skills-page {
+        flex-direction: column;
+
+        height: fit-content;
+        margin-top: -2rem;
+        padding-top: 4rem;
+    }
+
+    #skills-page .container {
+        height: fit-content
+    }
+
+    .card {
+        transform: none;
+
+        width: 20rem;
+        height: 6rem;
+        margin: 1rem 0;
+
+        position: static;
+    }
+
+    .card:not(.active):not(.extra-active) .card-content {
+        filter: blur(0px);
+    }
+
+    .card.active .card-content {
+        filter: blur(0px);
+    }
+
+    .card.extra-active .card-content {
+        filter: blur(0);
+    }
+
+    .card:hover,
+    .card.active,
+    .card.extra-active {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .card-title {
+        width: 80%;
+
+        position: relative;
+    }
+
+    .percent {
+        position: absolute;
+        right: 2rem;
+    }
+
+    #skills-page>div {
+        border-color: transparent;
+    }
+
+    /* Why Hire Me Page */
+
+    /* Different Page */
+    #why-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Footer */
+    footer {
+        background-color: var(--bc-1);
+        border: none;
+
+        width: 99%;
+        height: 7rem;
+        margin-bottom: .1rem;
+    }
+
+    #social-icons {
+        gap: 0 3rem;
+    }
+
+    #social-icons p {
+        color: var(--tc-2);
+    }
+}
