@@ -208,6 +208,10 @@
     }
 
     /* Why Hire Me Page */
+    .why-text>p:nth-child(1) {
+        height: fit-content;
+        margin: 2rem 0 .1rem;
+    }
 
     /* Different Page */
     #why-grid {

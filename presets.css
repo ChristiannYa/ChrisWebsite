@@ -91,6 +91,15 @@
         text-align: center;
     }
 
+    /* Why Titles */
+    .text-preset-2-bold {
+        font-family: var(--ff-1);
+        font-size: calc(var(--fs-3) - .1rem);
+        font-weight: var(--fw-2);
+        color: var(--tc-2);
+        text-align: center;
+    }
+
     /* Page Titles */
     .text-preset-6 {
         font-family: var(--ff-1);

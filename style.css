@@ -306,13 +306,6 @@ body {
     margin-top: 1.8rem;
 }
 
-/* #skills-floor {
-    border-bottom: solid var(--brd-w) var(--brd-clr);
-
-    width: 100%;
-    height: 100%;
-} */
-
 .card.extra-active {
     z-index: 30;
 }
@@ -325,12 +318,6 @@ body {
 
 #why-hero p {
     text-align: start;
-}
-
-/* Different Page */
-#different-hero {
-    display: flex;
-    flex-direction: column;
 }
 
 #why-grid {
