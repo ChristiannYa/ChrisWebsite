@@ -49,6 +49,14 @@ body {
     display: show;
 }
 
+.gradient {
+    background: linear-gradient(90deg, var(--tc-5), var(--tc-2), var(--tc-3));
+    background-size: 300%;
+    animation: gradient 2s cubic-bezier(0.4, 0, 1, 1) infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* Top Navigation */
 #nav-container {
     width: 100%;
@@ -177,7 +185,7 @@ body {
 
     display: grid;
     justify-items: center;
-    grid-template-columns: 23rem 23rem 23rem;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
     top: 0;
 }

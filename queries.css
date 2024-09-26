@@ -1,12 +1,8 @@
 /* Remaining */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
     .container {
         width: 95%;
     }
-
-    /* .page {
-        width: fit-content;
-    } */
 
     /* Work Page */
     #works-wrap {
@@ -17,7 +13,7 @@
 }
 
 /* Tablet Screen */
-@media only screen and (min-width: 711px) and (max-width: 1024px) {
+@media only screen and (min-width: 710px) and (max-width: 1024px) {
     .container {
         width: 95%;
     }
@@ -49,13 +45,21 @@
     }
 
     /* Works Page */
+    #work-page {
+        padding-top: 4rem;
+    }
+
     #works-wrap {
-        grid-template-columns: 21rem 21rem;
-        gap: 0px 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 4rem;
     }
 
     .work {
-        width: 90%;
+        width: 100%;
+    }
+
+    .work-desc {
+        width: 100%;
     }
 
     .work-images {
@@ -66,6 +70,7 @@
     #skills-page {
         width: 100%;
         height: fit-content;
+        padding-top: 4rem;
     }
 
     #skills-page .container {
@@ -134,7 +139,7 @@
 
     /* Why Page */
     #why-page {
-        margin-top: 2rem;
+        margin-top: 10rem;
     }
 
     #why-hero p:nth-child(2) {
@@ -259,7 +264,18 @@
         scroll-snap-align: center;
         width: calc(100% - 2rem);
         max-width: 23.75rem;
-        margin-left: 4rem;
+    }
+
+    .work-desc {
+        width: 100%;
+    }
+
+    #first-work {
+        margin-left: 10rem;
+    }
+
+    #last-work {
+        margin-right: 10rem;
     }
 
     .work-images {
