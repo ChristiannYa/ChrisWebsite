@@ -173,7 +173,7 @@ body {
 
 #works-wrap {
     margin-top: 1.5rem;
-    gap: 2em 3rem;
+    gap: 2rem 3rem;
 
     display: grid;
     justify-items: center;
@@ -282,11 +282,11 @@ body {
 }
 
 .card:not(.active):not(.extra-active) .card-content {
-    filter: blur(1px);
+    filter: blur(0px);
 }
 
 .card.active .card-content {
-    filter: blur(1px);
+    filter: blur(0px);
 }
 
 .card.extra-active .card-content {

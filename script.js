@@ -3,6 +3,7 @@ function enableHoverEffects() {
     const cards = document.querySelectorAll('.card');
 
     // Overall hover effect
+
     skillsPage.addEventListener('mouseenter', () => {
         cards.forEach(card => {
             card.classList.add('active');
@@ -28,7 +29,7 @@ function enableHoverEffects() {
 }
 
 function checkScreenSize() {
-    if (window.innerWidth >= 426) {
+    if (window.innerWidth >= 1024) {
         enableHoverEffects();
     } else {
         // Remove event listeners and classes when screen size is less than 426px

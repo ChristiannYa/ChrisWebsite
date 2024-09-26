@@ -1,5 +1,23 @@
+/* Remaining */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+
+    /* .page {
+        width: fit-content;
+    } */
+
+    /* Work Page */
+    #works-wrap {
+        grid-template-columns: 23rem 23rem;
+
+        gap: 3rem 7rem;
+    }
+}
+
 /* Tablet Screen */
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 711px) and (max-width: 1024px) {
     .container {
         width: 95%;
     }
@@ -32,7 +50,86 @@
 
     /* Works Page */
     #works-wrap {
-        grid-template-columns: 23rem 23rem;
+        grid-template-columns: 21rem 21rem;
+        gap: 0px 1.5rem;
+    }
+
+    .work {
+        width: 90%;
+    }
+
+    .work-images {
+        width: 100%;
+    }
+
+    /* Skills Page */
+    #skills-page {
+        width: 100%;
+        height: fit-content;
+    }
+
+    #skills-page .container {
+        display: flex;
+        gap: 2rem;
+        height: fit-content;
+    }
+
+    #skills-page .card-one {
+        margin-top: 8rem;
+    }
+
+    #skills-page .card .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card .card-content .card-title {
+        margin-top: 0;
+
+        display: flex;
+    }
+
+    #skills-page .card {
+        transform: none;
+
+        width: 85%;
+        height: 8rem;
+
+        position: static;
+    }
+
+    .card:not(.active):not(.extra-active) .card-content {
+        filter: blur(0px);
+    }
+
+    .card.active .card-content {
+        filter: blur(0px);
+    }
+
+    .card.extra-active .card-content {
+        filter: blur(0);
+    }
+
+    .card:hover,
+    .card.active,
+    .card.extra-active {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .card .card-title {
+
+        width: 85%;
+    }
+
+    #skills-page>div {
+        border-color: transparent;
+    }
+
+    .percent {
+        position: absolute;
+        right: 8%;
     }
 
     /* Why Page */
@@ -60,8 +157,8 @@
     }
 }
 
-/* Phone Screens */
-@media only screen and (max-width: 426px) {
+/* Medium-Small Screen Size */
+@media only screen and (max-width: 710px) {
     .page {
         margin-top: 0rem;
     }
@@ -93,13 +190,26 @@
         display: none;
     }
 
+    /* Top Navigation */
+    #nav-as-wrap {
+        margin-top: 2.5rem;
+    }
+
     /* Landing Page */
     #landing-page {
-        margin-top: 2rem;
+        margin-top: 7rem;
     }
 
     #intro-container {
         flex-direction: column-reverse;
+    }
+
+    #intro-text {
+        width: 100%;
+    }
+
+    #intro-text p {
+        text-align: center;
     }
 
     #dots {
@@ -107,8 +217,8 @@
     }
 
     #my-frame {
-        width: 21.25rem;
-        height: 21.75rem;
+        width: 290px;
+        height: 297px;
     }
 
     #intro-text>p {
@@ -119,7 +229,7 @@
     #work-page {
         flex-direction: column;
 
-        padding-top: 4rem;
+        padding-top: 5rem;
     }
 
     #work-page>p:nth-child(1) {
@@ -128,7 +238,7 @@
 
     #works-wrap {
         width: 100%;
-        margin-top: 0;
+        margin-top: 1.7rem;
 
         display: flex;
         overflow-x: auto;
@@ -149,10 +259,11 @@
         scroll-snap-align: center;
         width: calc(100% - 2rem);
         max-width: 23.75rem;
+        margin-left: 4rem;
     }
 
     .work-images {
-        width: 22rem;
+        width: 100%;
     }
 
     /* Skills Page */
@@ -160,18 +271,18 @@
         flex-direction: column;
 
         height: fit-content;
-        margin-top: -2rem;
-        padding-top: 4rem;
+        margin-top: 0rem;
+        padding-top: 5rem;
     }
 
     #skills-page .container {
-        height: fit-content
+        height: fit-content;
     }
 
     .card {
         transform: none;
 
-        width: 20rem;
+        width: 85%;
         height: 6rem;
         margin: 1rem 0;
 
@@ -205,7 +316,7 @@
 
     .percent {
         position: absolute;
-        right: 2rem;
+        right: 8%;
     }
 
     #skills-page>div {
@@ -213,15 +324,31 @@
     }
 
     /* Why Hire Me Page */
-    .why-text>p:nth-child(1) {
-        height: fit-content;
-        margin: 2rem 0 .1rem;
+    #why-page {
+        margin-top: 5rem;
+    }
+
+    #why-hero p {
+        text-align: center;
     }
 
     /* Different Page */
     #why-grid {
         display: flex;
         flex-direction: column;
+    }
+
+    .why-text>p:nth-child(1) {
+        text-align: center;
+
+        height: fit-content;
+        margin: 2rem 0 .1rem;
+    }
+
+    .why-text>p:nth-child(2) {
+        text-align: center;
+
+        height: fit-content;
     }
 
     /* Footer */

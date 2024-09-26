@@ -1,17 +1,9 @@
-@media only screen and (min-width: 710px) and (max-width: 1024px) {
-    .card {
-        width: 210px;
-        height: 404px;
-    }
-
-    .card-title {
-        width: 110px;
-    }
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
 
     /* Card Number One */
     .card-one {
         top: 21.125rem;
-        left: 9.25rem;
+        left: 25%;
     }
 
     .card-one.active {
@@ -21,7 +13,7 @@
     /* Card Number Two */
     .card-two {
         top: 21.125rem;
-        left: 14.5rem;
+        left: 32%;
     }
 
     .card-two.active {
@@ -31,7 +23,7 @@
     /* Card Number Three */
     .card-three {
         top: 23rem;
-        left: 19rem;
+        left: 37%;
     }
 
     .card-three.active {
@@ -41,7 +33,7 @@
     /* Card Number Four */
     .card-four {
         top: 25.5rem;
-        left: 21.5rem;
+        left: 42%;
     }
 
     .card-four.active {
@@ -51,7 +43,7 @@
     /* Card Number Five */
     .card-five {
         top: 28rem;
-        left: 22rem;
+        left: 47%;
     }
 
     .card-five.active {

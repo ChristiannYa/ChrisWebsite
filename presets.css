@@ -1,6 +1,6 @@
 /* Hi Heading */
 .text-preset-1 {
-    font-family: var(--ff-1);
+    font-family: var(--ff-2);
     font-size: var(--fs-4);
     font-weight: var(--fw-2);
     text-align: center;
@@ -9,7 +9,7 @@
 
 /* Hi Paragraphs */
 .text-preset-2 {
-    font-family: var(--ff-1);
+    font-family: var(--ff-2);
     font-size: var(--fs-3);
     font-weight: var(--fw-1);
     color: var(--tc-5);
@@ -18,7 +18,7 @@
 
 /* Why Titles */
 .text-preset-2-bold {
-    font-family: var(--ff-1);
+    font-family: var(--ff-2);
     font-size: var(--fs-3);
     font-weight: var(--fw-2);
     color: var(--tc-2);
@@ -35,7 +35,7 @@
 
 /* Work Title */
 .text-preset-4-bold {
-    font-family: var(--ff-1);
+    font-family: var(--ff-2);
     font-size: var(--fs-2);
     font-weight: var(--fw-3);
     color: var(--tc-2);
@@ -44,7 +44,7 @@
 
 /* Work Description */
 .text-preset-4 {
-    font-family: var(--ff-1);
+    font-family: var(--ff-2);
     font-size: var(--fs-2);
     font-weight: var(--fw-1);
     color: var(--tc-5);
@@ -62,50 +62,52 @@
 
 /* Page Titles */
 .text-preset-6 {
-    font-family: var(--ff-1);
+    font-family: var(--ff-2);
     font-size: var(--fs-4);
     font-weight: var(--fw-2);
     color: var(--tc-5);
     text-align: center;
 }
 
-@media only screen and (max-width: 426px) {
+/* Medium Screen Size */
+@media only screen and (min-width: 711px) and (max-width: 1024px) {
 
     /* Hi Heading */
     .text-preset-1 {
-        font-family: var(--ff-1);
-        font-size: calc(var(--fs-4) - 1rem);
-        font-weight: var(--fw-2);
+        font-size: calc(var(--fs-4) + .5rem);
+    }
+
+    /* Navigation */
+    .text-preset-3 {
+        font-size: var(--fs-2);
+    }
+}
+
+/* Medium-Small Screen Size */
+@media only screen and (max-width: 710px) {
+
+    /* Hi Heading */
+    .text-preset-1 {
+        font-size: calc(var(--fs-4) - .5rem);
         text-align: center;
-        word-spacing: -.7rem;
-        letter-spacing: -.01rem;
-        color: var(--tc-5);
     }
 
     /* Hi Paragraphs */
     .text-preset-2 {
-        font-family: var(--ff-1);
-        font-size: calc(var(--fs-3) - .25rem);
-        font-weight: var(--fw-1);
+        font-size: var(--fs-3);
         color: var(--tc-5);
         text-align: center;
     }
 
     /* Why Titles */
     .text-preset-2-bold {
-        font-family: var(--ff-1);
-        font-size: calc(var(--fs-3) - .1rem);
-        font-weight: var(--fw-2);
-        color: var(--tc-2);
         text-align: center;
     }
 
     /* Page Titles */
     .text-preset-6 {
-        font-family: var(--ff-1);
-        font-size: calc(var(--fs-4) - 1rem);
-        font-weight: var(--fw-2);
-        color: var(--tc-5);
+        font-family: var(--ff-2);
+        font-size: calc(var(--fs-4) - .9rem);
         text-align: center;
     }
 }
