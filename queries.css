@@ -124,7 +124,6 @@
     }
 
     .card .card-title {
-
         width: 85%;
     }
 
@@ -133,8 +132,10 @@
     }
 
     .percent {
+        margin-bottom: 2.1rem;
+
         position: absolute;
-        right: 8%;
+        right: 9%;
     }
 
     /* Why Page */
@@ -183,7 +184,7 @@
     }
 
     .container {
-        width: 98%;
+        width: 95%;
     }
 
     .page-title-m {
@@ -193,6 +194,30 @@
 
     .page-title {
         display: none;
+    }
+
+    .click {
+        position: relative;
+        transition: transform 0.3s ease-out;
+    }
+
+    .click::after {
+        content: '';
+        position: absolute;
+        width: 0rem;
+        height: 0.0625rem;
+        bottom: 0;
+        left: 0;
+        background-color: currentColor;
+        transition: width 0.3s ease-out;
+    }
+
+    .grow {
+        transform: scale(0.9);
+    }
+
+    .underline::after {
+        width: 100%;
     }
 
     /* Top Navigation */
@@ -332,7 +357,7 @@
 
     .percent {
         position: absolute;
-        right: 15%;
+        right: 12%;
     }
 
     #skills-page>div {

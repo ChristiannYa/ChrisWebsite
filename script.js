@@ -3,7 +3,6 @@ function enableHoverEffects() {
     const cards = document.querySelectorAll('.card');
 
     // Overall hover effect
-
     skillsPage.addEventListener('mouseenter', () => {
         cards.forEach(card => {
             card.classList.add('active');
@@ -48,7 +47,26 @@ function checkScreenSize() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    checkScreenSize();
+    const links = document.querySelectorAll('.click');
 
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth <= 710) {
+                e.preventDefault(); // Prevent default link behavior
+
+                requestAnimationFrame(() => {
+                    link.classList.add('grow', 'underline');
+
+                    requestAnimationFrame(() => {
+                        setTimeout(() => {
+                            link.classList.remove('grow', 'underline');
+                        }, 300);
+                    });
+                });
+            }
+        });
+    });
+
+    checkScreenSize();
     window.addEventListener('resize', checkScreenSize);
 });
