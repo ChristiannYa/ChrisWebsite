@@ -197,7 +197,7 @@
 
     /* Top Navigation */
     #nav-as-wrap {
-        margin-top: 2.5rem;
+        margin-top: .2rem;
     }
 
     /* Landing Page */
@@ -332,7 +332,7 @@
 
     .percent {
         position: absolute;
-        right: 8%;
+        right: 15%;
     }
 
     #skills-page>div {
