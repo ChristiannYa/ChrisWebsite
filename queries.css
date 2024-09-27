@@ -197,27 +197,11 @@
     }
 
     .click {
-        position: relative;
         transition: transform 0.3s ease-out;
     }
 
-    .click::after {
-        content: '';
-        position: absolute;
-        width: 0rem;
-        height: 0.0625rem;
-        bottom: 0;
-        left: 0;
-        background-color: currentColor;
-        transition: width 0.3s ease-out;
-    }
-
     .grow {
-        transform: scale(0.9);
-    }
-
-    .underline::after {
-        width: 100%;
+        transform: scale(1.1);
     }
 
     /* Top Navigation */

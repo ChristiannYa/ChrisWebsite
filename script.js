@@ -51,21 +51,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
     links.forEach(link => {
         link.addEventListener('click', (e) => {
-            if (window.innerWidth <= 710) {
-                e.preventDefault(); // Prevent default link behavior
+            const href = link.getAttribute('href');
 
+            // Check if it's an internal link (starts with '#')
+            if (href.startsWith('#') && window.innerWidth <= 710) {
+                e.preventDefault();
+
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    // Add animation classes
+                    requestAnimationFrame(() => {
+                        link.classList.add('grow', 'underline');
+
+                        setTimeout(() => {
+                            link.classList.remove('grow', 'underline');
+
+                            // Smooth scroll to the target element
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+
+                            // Update URL after scrolling
+                            setTimeout(() => {
+                                history.pushState(null, '', href);
+                            }, 1000); // Adjust timing as needed
+                        }, 300);
+                    });
+                }
+            } else if (window.innerWidth <= 710) {
+                // For external links, just add animation
+                e.preventDefault();
                 requestAnimationFrame(() => {
                     link.classList.add('grow', 'underline');
 
-                    requestAnimationFrame(() => {
-                        setTimeout(() => {
-                            link.classList.remove('grow', 'underline');
-                        }, 300);
-                    });
+                    setTimeout(() => {
+                        link.classList.remove('grow', 'underline');
+                        window.location.href = href;
+                    }, 300);
                 });
             }
         });
     });
+
+
+
 
     checkScreenSize();
     window.addEventListener('resize', checkScreenSize);
