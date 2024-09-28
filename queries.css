@@ -340,7 +340,7 @@
     }
 
     .percent {
-        right: 10%;
+        right: 0;
     }
 
     #skills-page>div {
@@ -399,60 +399,5 @@
 
     footer #social-icons .bicon-wrap .bicon-text {
         display: none;
-    }
-}
-
-/* Landscape Mode */
-@media only screen and (min-width: 480px) and (max-width: 710px) {
-    #skills-page {
-        flex-direction: column;
-
-        height: fit-content;
-        margin-top: 0rem;
-        padding-top: 4rem;
-    }
-
-    .card {
-        transform: none;
-
-        width: 100%;
-        height: 6rem;
-        margin: 1rem 0;
-        padding: 0 2.5rem;
-
-        position: static;
-    }
-
-    .card:not(.active):not(.extra-active) .card-content {
-        filter: blur(0px);
-    }
-
-    .card.active .card-content {
-        filter: blur(0px);
-    }
-
-    .card.extra-active .card-content {
-        filter: blur(0);
-    }
-
-    .card:hover,
-    .card.active,
-    .card.extra-active {
-        transform: none;
-        box-shadow: none;
-    }
-
-    .card-content {
-        position: relative;
-    }
-
-    .card-title {
-        /* border: solid 1px red; */
-        width: 100%;
-    }
-
-    .percent {
-        right: 0;
-        position: absolute;
     }
 }
