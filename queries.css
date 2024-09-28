@@ -335,8 +335,6 @@
 
     .card-title {
         width: 100%;
-
-        position: relative;
     }
 
     .percent {
@@ -390,14 +388,18 @@
 
         width: fit-content;
         height: fit-content;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1rem;
     }
 
     #social-icons {
         gap: 0 3rem;
     }
 
-    footer #social-icons .bicon-wrap .bicon-text {
+    .bicon-text {
         display: none;
+    }
+
+    #finfo-text {
+        color: var(--tc-2);
     }
 }

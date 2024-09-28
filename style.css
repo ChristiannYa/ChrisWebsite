@@ -354,16 +354,18 @@ footer {
     background-color: var(--fbc);
 
     width: 99.5%;
-    height: 9rem;
+    padding: 1.2rem 0;
+    gap: 1rem;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
 #social-icons {
-    gap: 0 12.5rem;
+    gap: 0 5rem;
 
     display: flex;
 }
@@ -388,7 +390,7 @@ footer {
     position: relative;
     color: var(--tc-1);
     text-decoration: none;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 
 #social-icons .bicon-wrap:hover .text-preset-3 {
@@ -400,7 +402,7 @@ footer {
     content: "";
     transition: 0.3s;
 
-    height: 0.0625rem;
+    height: var(--brd-w);
     width: 0;
 
     position: absolute;
