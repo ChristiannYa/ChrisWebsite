@@ -53,7 +53,7 @@ body {
     background: linear-gradient(90deg, var(--tc-5), var(--tc-2), var(--tc-3));
     background-size: 300%;
     animation: gradient 2s cubic-bezier(0.4, 0, 1, 1) infinite;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -311,7 +311,9 @@ body {
 }
 
 .percent {
-    margin-top: 1.8rem;
+    position: absolute;
+    top: 2rem;
+    right: 12%;
 }
 
 .card.extra-active {
@@ -366,33 +368,39 @@ footer {
     display: flex;
 }
 
-#social-icons a {
-    background-color: var(--fbc);
-    border: solid var(--brd-w) var(--brd-clr);
-    border-radius: var(--brd-r);
-    text-decoration: none;
-
-    width: 3.125rem;
-    height: 3.125rem;
+.bicon-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#social-icons p {
-    position: relative;
+.bicon {
+    background-color: var(--fbc);
+    border: solid var(--brd-w) var(--brd-clr);
+    border-radius: var(--brd-r);
+
+    width: 3.125rem;
+    height: 3.125rem;
+    display: flex;
 }
 
-#social-icons a:hover p {
+#social-icons .text-preset-3 {
+    position: relative;
+    color: var(--tc-1);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#social-icons .bicon-wrap:hover .text-preset-3 {
     color: var(--tc-1);
 }
 
-#social-icons p:after {
+#social-icons .text-preset-3:after {
     background-color: var(--tc-1);
     content: "";
     transition: 0.3s;
 
-    height: var(--brd-w);
+    height: 0.0625rem;
     width: 0;
 
     position: absolute;
@@ -400,6 +408,6 @@ footer {
     bottom: 0;
 }
 
-#social-icons a:hover p:after {
+#social-icons .bicon-wrap:hover .text-preset-3:after {
     width: 100%;
 }
