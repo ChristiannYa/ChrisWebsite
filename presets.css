@@ -57,7 +57,7 @@
     font-size: var(--fs-2);
     font-weight: var(--fw-2);
     color: var(--tc-1);
-    text-align: center;
+    text-align: start;
 }
 
 /* Page Titles */

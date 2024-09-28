@@ -307,23 +307,10 @@
         transform: none;
 
         width: 100%;
-        height: 6rem;
+        height: fit-content;
         margin: 1rem 0;
-        padding: 0 2.5rem;
 
         position: static;
-    }
-
-    .card:not(.active):not(.extra-active) .card-content {
-        filter: blur(0px);
-    }
-
-    .card.active .card-content {
-        filter: blur(0px);
-    }
-
-    .card.extra-active .card-content {
-        filter: blur(0);
     }
 
     .card:hover,
@@ -333,12 +320,12 @@
         box-shadow: none;
     }
 
-    .card-title {
-        width: 100%;
+    .card-content {
+        padding: 1rem 0;
     }
 
-    .percent {
-        right: 0;
+    .card-title {
+        margin: 0rem 0rem;
     }
 
     #skills-page>div {
@@ -388,7 +375,7 @@
 
         width: fit-content;
         height: fit-content;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
     }
 
     #social-icons {
@@ -401,5 +388,6 @@
 
     #finfo-text {
         color: var(--tc-2);
+        text-align: center;
     }
 }
