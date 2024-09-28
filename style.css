@@ -400,3 +400,7 @@ footer {
 #social-icons .bicon-wrap:hover .text-preset-3:after {
     width: 100%;
 }
+
+#finfo-text {
+    text-align: center;
+}
