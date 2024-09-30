@@ -31,7 +31,7 @@ function checkScreenSize() {
     if (window.innerWidth >= 1024) {
         enableHoverEffects();
     } else {
-        // Remove event listeners and classes when screen size is less than 426px
+        // Remove event listeners and classes when screen size is less than 1024px
         const skillsPage = document.querySelector('.skills-page');
         const cards = document.querySelectorAll('.card');
 
@@ -46,6 +46,7 @@ function checkScreenSize() {
     }
 }
 
+// Navigation button effect (mobile version)
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.click');
 
@@ -54,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const href = link.getAttribute('href');
 
             // Check if it's an internal link (starts with '#')
-            if (href.startsWith('#') && window.innerWidth <= 710) {
+            if (href.startsWith('#') && window.innerWidth <= 750) {
                 e.preventDefault();
 
                 const targetId = href.substring(1);
@@ -63,10 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (targetElement) {
                     // Add animation classes
                     requestAnimationFrame(() => {
-                        link.classList.add('grow', 'underline');
+                        link.classList.add('scale', 'underline');
 
                         setTimeout(() => {
-                            link.classList.remove('grow', 'underline');
+                            link.classList.remove('scale', 'underline');
 
                             // Smooth scroll to the target element
                             targetElement.scrollIntoView({
@@ -84,12 +85,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 // For external links, just add animation
                 e.preventDefault();
                 requestAnimationFrame(() => {
-                    link.classList.add('grow', 'underline');
+                    link.classList.add('scale', 'underline');
 
-                    setTimeout(() => {
-                        link.classList.remove('grow', 'underline');
-                        window.location.href = href;
-                    }, 300);
+                    // setTimeout(() => {
+                    //     link.classList.remove('scale', 'underline');
+                    //     window.location.href = href;
+                    // }, 300);
                 });
             }
         });

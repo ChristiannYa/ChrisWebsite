@@ -27,6 +27,10 @@
         padding: .2rem 0;
     }
 
+    #nav-as a:hover:after {
+        width: 0;
+    }
+
     /* Landing Page */
     #landing-page {
         margin-top: 4rem;
@@ -199,7 +203,7 @@
         transition: transform 0.4s ease-out;
     }
 
-    .grow {
+    .scale {
         transform: scale(0.9);
     }
 
