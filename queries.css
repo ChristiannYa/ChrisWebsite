@@ -83,10 +83,6 @@
         height: fit-content;
     }
 
-    #skills-page .card-one {
-        margin-top: 8rem;
-    }
-
     #skills-page .card .card-content {
         display: flex;
         flex-direction: column;
@@ -106,25 +102,6 @@
         height: 8rem;
 
         position: static;
-    }
-
-    .card:not(.active):not(.extra-active) .card-content {
-        filter: blur(0px);
-    }
-
-    .card.active .card-content {
-        filter: blur(0px);
-    }
-
-    .card.extra-active .card-content {
-        filter: blur(0);
-    }
-
-    .card:hover,
-    .card.active,
-    .card.extra-active {
-        transform: none;
-        box-shadow: none;
     }
 
     .card .card-title {

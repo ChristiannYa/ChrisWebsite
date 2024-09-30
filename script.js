@@ -1,52 +1,3 @@
-function enableHoverEffects() {
-    const skillsPage = document.querySelector('.skills-page');
-    const cards = document.querySelectorAll('.card');
-
-    // Overall hover effect
-    skillsPage.addEventListener('mouseenter', () => {
-        cards.forEach(card => {
-            card.classList.add('active');
-        });
-    });
-
-    skillsPage.addEventListener('mouseleave', () => {
-        cards.forEach(card => {
-            card.classList.remove('active');
-        });
-    });
-
-    // Individual card effects
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            card.classList.add('extra-active');
-        });
-
-        card.addEventListener('mouseleave', () => {
-            card.classList.remove('extra-active');
-        });
-    });
-}
-
-// Remove card effects
-function checkScreenSize() {
-    if (window.innerWidth >= 1024) {
-        enableHoverEffects();
-    } else {
-        // Remove event listeners and classes when screen size is less than 1024px
-        const skillsPage = document.querySelector('.skills-page');
-        const cards = document.querySelectorAll('.card');
-
-        skillsPage.removeEventListener('mouseenter', () => { });
-        skillsPage.removeEventListener('mouseleave', () => { });
-
-        cards.forEach(card => {
-            card.removeEventListener('mouseenter', () => { });
-            card.removeEventListener('mouseleave', () => { });
-            card.classList.remove('active', 'extra-active');
-        });
-    }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.click');
 
@@ -76,11 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
                             // Update URL after scrolling
                             setTimeout(() => {
                                 history.pushState(null, '', href);
-                            }, 1000); // Adjust timing as needed
+                            }, 1000); // Adjust timing 
                         }, 300);
                     });
                 }
-            } else if (window.innerWidth <= 510) {
+            } else if (window.innerWidth <= 750) {
                 // Add animation for external links
                 e.preventDefault();
                 requestAnimationFrame(() => {
@@ -95,6 +46,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
+    const cards = document.querySelectorAll('.card');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const progressElement = entry.target.querySelector('.circular-progress');
+                const valueElement = entry.target.querySelector('.progress-value');
+                const percentValue = parseInt(valueElement.textContent);
+
+                let progressValue = 0;
+                let progressEndValue = percentValue;
+                let speed = 20;
+
+                let progress = setInterval(() => {
+                    progressValue++;
+                    valueElement.textContent = `${progressValue}%`;
+                    progressElement.style.setProperty('--progress-angle', `${progressValue * 3.6}deg`);
+                    if (progressValue == progressEndValue) {
+                        clearInterval(progress);
+                    }
+                }, speed);
+
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    cards.forEach(card => {
+        observer.observe(card);
+    });
 });
