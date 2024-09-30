@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         }, 300);
                     });
                 }
-            } else if (window.innerWidth <= 710) {
+            } else if (window.innerWidth <= 510) {
                 // For external links, just add animation
                 e.preventDefault();
                 requestAnimationFrame(() => {
