@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 let progressValue = 0;
                 let progressEndValue = percentValue;
-                let speed = 20;
+                let speed = 25;
 
                 let progress = setInterval(() => {
                     progressValue++;

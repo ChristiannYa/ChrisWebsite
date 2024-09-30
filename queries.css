@@ -71,52 +71,7 @@
     }
 
     /* Skills Page */
-    #skills-page {
-        width: 100%;
-        height: fit-content;
-        padding-top: 4rem;
-    }
 
-    #skills-page .container {
-        display: flex;
-        gap: 2rem;
-        height: fit-content;
-    }
-
-    #skills-page .card .card-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .card .card-content .card-title {
-        margin-top: 0;
-
-        display: flex;
-    }
-
-    #skills-page .card {
-        transform: none;
-
-        width: 85%;
-        height: 8rem;
-
-        position: static;
-    }
-
-    .card .card-title {
-        width: 82%;
-    }
-
-    #skills-page>div {
-        border-color: transparent;
-    }
-
-    .card-content .percent {
-        position: absolute;
-        top: 2.5rem;
-        right: 10%;
-    }
 
     /* Why Page */
     #why-page {
@@ -157,7 +112,6 @@
         background-color: transparent;
         color: var(--tc-5);
     }
-
 
     body {
         padding-bottom: 0;
@@ -281,36 +235,25 @@
     }
 
     #skills-page .container {
-        height: fit-content;
+        width: 92%;
+    }
+
+    #cards {
+        width: 90%;
+        gap: 1.5rem;
+
+        display: flex;
+        flex-direction: column;
     }
 
     .card {
-        transform: none;
-
         width: 100%;
         height: fit-content;
-        margin: 1rem 0;
-
-        position: static;
     }
 
-    .card:hover,
-    .card.active,
-    .card.extra-active {
-        transform: none;
-        box-shadow: none;
-    }
-
-    .card-content {
-        padding: 1rem 0;
-    }
-
-    .card-title {
-        margin: 0rem 0rem;
-    }
-
-    #skills-page>div {
-        border-color: transparent;
+    .circular-progress {
+        width: 4rem;
+        height: 4rem;
     }
 
     /* Why Hire Me Page */
