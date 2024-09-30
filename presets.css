@@ -120,4 +120,9 @@
         font-size: var(--fs-0);
     }
 
+    /* Card Titles */
+    .text-preset-5 {
+        font-size: var(--fs-1);
+    }
+
 }
