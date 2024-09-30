@@ -246,7 +246,7 @@ body {
 /* Skills Page */
 #skills-page {
     width: 100%;
-
+    height: 25rem;
     display: flex;
     position: relative;
 }
@@ -264,11 +264,10 @@ body {
 
 .card {
     background-color: var(--crd-bc);
-    border: solid var(--brd-w) var(--brd-clr);
     border-radius: var(--brd-r);
-
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     min-width: 17rem;
-    padding: .6rem 1rem;
+    padding: .7rem 1rem;
 
     display: flex;
 }
@@ -320,6 +319,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .progress-gradient {
@@ -328,7 +328,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(270deg, #033e8a, #e49b0f, #033e8a, #ff0800, #033e8a, #ff0800);
+    background: linear-gradient(270deg, #033e8a, #e49b0f, #033e8a, #e49b0f, #033e8a, #e49b0f);
     background-size: 500% 600%;
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
