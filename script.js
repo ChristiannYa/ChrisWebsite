@@ -27,6 +27,7 @@ function enableHoverEffects() {
     });
 }
 
+// Remove card effects
 function checkScreenSize() {
     if (window.innerWidth >= 1024) {
         enableHoverEffects();
@@ -46,7 +47,6 @@ function checkScreenSize() {
     }
 }
 
-// Navigation button effect (mobile version)
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.click');
 
@@ -64,12 +64,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (targetElement) {
                     // Add animation classes
                     requestAnimationFrame(() => {
-                        link.classList.add('scale', 'underline');
+                        link.classList.add('scale');
 
                         setTimeout(() => {
-                            link.classList.remove('scale', 'underline');
+                            link.classList.remove('scale');
 
-                            // Smooth scroll to the target element
                             targetElement.scrollIntoView({
                                 behavior: 'smooth'
                             });
@@ -82,22 +81,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 }
             } else if (window.innerWidth <= 510) {
-                // For external links, just add animation
+                // Add animation for external links
                 e.preventDefault();
                 requestAnimationFrame(() => {
-                    link.classList.add('scale', 'underline');
+                    link.classList.add('scale');
 
-                    // setTimeout(() => {
-                    //     link.classList.remove('scale', 'underline');
-                    //     window.location.href = href;
-                    // }, 300);
+                    setTimeout(() => {
+                        link.classList.remove('scale');
+                        window.location.href = href;
+                    }, 300);
                 });
             }
         });
     });
-
-
-
 
     checkScreenSize();
     window.addEventListener('resize', checkScreenSize);
