@@ -71,7 +71,33 @@
     }
 
     /* Skills Page */
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+    }
 
+    .card-one {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .card-two {
+        grid-area: 1 / 3 / 2 / 5;
+    }
+
+    .card-three {
+        grid-area: 1 / 5 / 2 / 7;
+    }
+
+    .card-four {
+        grid-area: 2 / 2 / 3 / 4;
+    }
+
+    .card-five {
+        grid-area: 2 / 4 / 3 / 6;
+    }
 
     /* Why Page */
     #why-page {
@@ -84,17 +110,43 @@
 
     /* Different Page */
     #why-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: min-content;
-        gap: 0 2rem;
+        gap: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
-    .why-text>p:nth-child(1) {
+    .why-text {
+        height: fit-content;
+
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #why-grid .why-text .different-p-title {
         text-align: center;
     }
 
-    .why-text>p:nth-child(2) {
+    #why-grid .why-text p:nth-child(2) {
         text-align: center;
+
+        align-self: center;
+    }
+
+    #different-p-one {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    #different-p-two {
+        grid-area: 1 / 3 / 2 / 5;
+    }
+
+    #different-p-three {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    #different-p-four {
+        grid-area: 2 / 3 / 3 / 5;
     }
 }
 
