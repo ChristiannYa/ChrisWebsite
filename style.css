@@ -251,10 +251,6 @@ body {
     position: relative;
 }
 
-#skills-page .container .page-title {
-    align-self: center;
-}
-
 .card {
     background-color: var(--crd-bc);
     border-radius: var(--brd-r);
