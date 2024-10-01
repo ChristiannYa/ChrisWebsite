@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const href = link.getAttribute('href');
 
             // Check if it's an internal link (starts with '#')
-            if (href.startsWith('#') && window.innerWidth <= 750) {
+            if (href.startsWith('#') && window.innerWidth <= 1281) {
                 e.preventDefault();
 
                 const targetId = href.substring(1);
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         }, 300);
                     });
                 }
-            } else if (window.innerWidth <= 750) {
+            } else if (window.innerWidth <= 1281) {
                 // Add animation for external links
                 e.preventDefault();
                 requestAnimationFrame(() => {
