@@ -59,6 +59,7 @@
         align-self: center;
     }
 
+    /* Top Navigation */
     #nav-as {
         gap: 0 3rem;
         padding: .2rem 0;
@@ -66,6 +67,14 @@
 
     #nav-as a:hover:after {
         width: 0;
+    }
+
+    .click {
+        transition: transform 0.4s ease-out;
+    }
+
+    .scale {
+        transform: scale(0.9);
     }
 
     /* Landing Page */
