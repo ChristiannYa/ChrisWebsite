@@ -420,8 +420,17 @@
         display: none;
     }
 
+    #finfo-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
     #finfo-text {
         color: var(--tc-2);
         text-align: center;
+    }
+
+    #bdot {
+        display: none;
     }
 }

@@ -469,7 +469,7 @@ footer {
 }
 
 #social-icons {
-    gap: 0 5rem;
+    gap: 0 4rem;
 
     display: flex;
 }
@@ -506,7 +506,7 @@ footer {
     content: "";
     transition: 0.3s;
 
-    height: var(--brd-w);
+    height: 0.09375rem;
     width: 0;
 
     position: absolute;
@@ -520,4 +520,9 @@ footer {
 
 #finfo-text {
     text-align: center;
+}
+
+#finfo-wrapper {
+    display: flex;
+    gap: 0 .5rem;
 }
