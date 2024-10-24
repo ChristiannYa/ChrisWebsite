@@ -254,7 +254,7 @@ body {
 .card {
     background-color: var(--crd-bc);
     border-radius: var(--brd-r);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: var(--crd-bc) 0px 1px 5px, black 0px 5px 5px;
     min-width: 17rem;
 
     padding: .7rem 1rem;
