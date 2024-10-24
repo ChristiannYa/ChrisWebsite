@@ -195,8 +195,8 @@ body {
     width: 100%;
 
     display: flex;
-    justify-content: space-between;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
 }
 
 .tools-used-container {
@@ -230,7 +230,7 @@ body {
 .hover-underline {
     --horizontal-padding: 0.6rem;
     text-decoration: none;
-    padding: 0.2rem var(--horizontal-padding);
+    padding: .2rem var(--horizontal-padding);
     position: relative;
     display: inline-block;
 }
@@ -245,7 +245,7 @@ body {
     left: var(--horizontal-padding);
     right: var(--horizontal-padding);
     /* Adjust this value to create space between text and underline */
-    bottom: 0.3rem;
+    bottom: 0.2rem;
 }
 
 .hover-underline:hover::after {
