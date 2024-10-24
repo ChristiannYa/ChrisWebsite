@@ -210,7 +210,7 @@ body {
     border: solid calc(var(--brd-w) - .02rem) var(--brd-clr);
     border-radius: calc(var(--brd-r) - 0.8rem);
 
-    width: 25px;
+    width: 30px;
     aspect-ratio: 1/1;
 }
 
@@ -220,23 +220,22 @@ body {
     display: flex;
 }
 
-.hover-underline {
-    --horizontal-padding: 0.6rem;
-
+.more-info-link-wrap {
     background: rgba(255, 255, 255, 0.3);
+
     border: solid var(--brd-w) var(--brd-clr);
     border-radius: calc(var(--brd-r) - 0.8rem);
+}
+
+.hover-underline {
+    --horizontal-padding: 0.6rem;
     text-decoration: none;
     padding: 0.2rem var(--horizontal-padding);
     position: relative;
     display: inline-block;
 }
 
-.hover-underline:hover {
-    color: var(--tc-1);
-}
-
-.hover-underline:after {
+.hover-underline::after {
     background-color: var(--tc-1);
     content: "";
     transition: 0.3s;
@@ -245,10 +244,11 @@ body {
     position: absolute;
     left: var(--horizontal-padding);
     right: var(--horizontal-padding);
-    bottom: 0.15rem;
+    /* Adjust this value to create space between text and underline */
+    bottom: 0.3rem;
 }
 
-.hover-underline:hover:after {
+.hover-underline:hover::after {
     width: calc(100% - (var(--horizontal-padding) * 2));
 }
 

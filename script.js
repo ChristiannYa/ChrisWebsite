@@ -8,15 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
             this.classList.add('scale');
 
+            // First wait for the scale down
             setTimeout(() => {
-                window.location.href = href;
+                // Remove scale to trigger grow back
+                this.classList.remove('scale');
+
+                // Wait for grow back to complete, then navigate
+                setTimeout(() => {
+                    window.location.href = href;
+                }, linkDuration);
+
             }, linkDuration);
         });
     });
 
-
     const cards = document.querySelectorAll('.card');
-
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
