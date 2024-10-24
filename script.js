@@ -1,50 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const links = document.querySelectorAll('.click');
+    document.querySelectorAll('.click').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const href = this.getAttribute('href');
+            const linkDuration = parseInt(getComputedStyle(document.documentElement)
+                .getPropertyValue('--link-duration'));
 
-    links.forEach(link => {
-        link.addEventListener('click', (e) => {
-            const href = link.getAttribute('href');
+            this.classList.add('scale');
 
-            // Check if it's an internal link (starts with '#')
-            if (href.startsWith('#') && window.innerWidth <= 1281) {
-                e.preventDefault();
-
-                const targetId = href.substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    // Add animation classes
-                    requestAnimationFrame(() => {
-                        link.classList.add('scale');
-
-                        setTimeout(() => {
-                            link.classList.remove('scale');
-
-                            targetElement.scrollIntoView({
-                                behavior: 'smooth'
-                            });
-
-                            // Update URL after scrolling
-                            setTimeout(() => {
-                                history.pushState(null, '', href);
-                            }, 1000); // Adjust timing 
-                        }, 300);
-                    });
-                }
-            } else if (window.innerWidth <= 1281) {
-                // Add animation for external links
-                e.preventDefault();
-                requestAnimationFrame(() => {
-                    link.classList.add('scale');
-
-                    setTimeout(() => {
-                        link.classList.remove('scale');
-                        window.location.href = href;
-                    }, 300);
-                });
-            }
+            setTimeout(() => {
+                window.location.href = href;
+            }, linkDuration);
         });
     });
+
 
     const cards = document.querySelectorAll('.card');
 

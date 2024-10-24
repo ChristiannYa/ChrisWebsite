@@ -46,4 +46,7 @@
     /* Work Image Frames Mobile */
     --wifm-w: 6.25rem;
     --wifm-h: 10.625rem;
+
+    /* Link duration */
+    --link-duration: 400ms;
 }
