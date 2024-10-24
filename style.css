@@ -193,10 +193,10 @@ body {
 .used-programs-container {
     /* border: solid 1px blue; */
     width: 100%;
-    gap: .5rem;
+    gap: .6rem;
 
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 
 .tool-used {
@@ -217,7 +217,7 @@ body {
 
 .work {
     /* border: solid 1px purple; */
-    width: 23.75rem;
+    width: 100%;
     height: fit-content;
     gap: 0.625rem 0;
 
