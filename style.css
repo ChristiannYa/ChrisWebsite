@@ -179,6 +179,7 @@ body {
 }
 
 #works-wrap {
+    /* border: solid 1px red; */
     margin-top: 1.5rem;
     gap: 2rem 3rem;
 
@@ -189,7 +190,33 @@ body {
     top: 0;
 }
 
+.used-programs-container {
+    /* border: solid 1px blue; */
+    width: 100%;
+    gap: .5rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.tool-used {
+    /* border: dotted 1px blue; */
+    border: solid calc(var(--brd-w) - .02rem) var(--brd-clr);
+    border-radius: calc(var(--brd-r) - 0.8rem);
+
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+
+#gear-icon {
+    border-radius: calc(var(--brd-r) - 0.8rem);
+
+    width: 25px;
+    aspect-ratio: 1/1;
+}
+
 .work {
+    /* border: solid 1px purple; */
     width: 23.75rem;
     height: fit-content;
     gap: 0.625rem 0;
