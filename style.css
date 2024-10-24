@@ -254,7 +254,7 @@ body {
 .card {
     background-color: var(--crd-bc);
     border-radius: var(--brd-r);
-    box-shadow: var(--crd-bc) 0px 1px 5px, black 0px 5px 5px;
+    box-shadow: #79baec 0px 0px 2px, #282A40 3px 3px 0px;
     min-width: 17rem;
 
     padding: .7rem 1rem;
@@ -350,8 +350,9 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(270deg, #79baec, #4682b4, #79baec, #4682b4, #79baec, #4682b4);
-    background-size: 500% 200%;
+    background: linear-gradient(270deg, #4682b4, #79baec, #4682b4, #79baec, #4682b4, #79baec);
+
+    background-size: 200% 500%;
     -webkit-animation: AnimationName 12s ease infinite;
     -moz-animation: AnimationName 12s ease infinite;
     -o-animation: AnimationName 12s ease infinite;
@@ -370,7 +371,7 @@ body {
 .circular-progress::after {
     content: "";
     position: absolute;
-    inset: 7%;
+    inset: 9%;
     background-color: var(--crd-bc);
     border-radius: 50%;
     z-index: 2;
