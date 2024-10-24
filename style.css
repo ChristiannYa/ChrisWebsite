@@ -33,7 +33,7 @@ body {
 
 .page-title {
     display: flex;
-    align-self: start;
+    /* align-self: start; */
 }
 
 .page-title-m {
@@ -71,7 +71,7 @@ body {
     border: solid var(--brd-w) var(--brd-clr);
     border-radius: var(--brd-r);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.3px);
+    backdrop-filter: blur(3.3px);
     -webkit-backdrop-filter: blur(7.3px);
 
     margin-top: 1rem;
@@ -201,7 +201,7 @@ body {
     overflow: hidden;
 }
 
-.work-images {
+.work-images-container {
     background-color: var(--fbc);
     border: solid var(--brd-w) var(--brd-clr);
     border-radius: var(--brd-r);
@@ -213,7 +213,7 @@ body {
     overflow: hidden;
 }
 
-.work-images img {
+.work-images-container img {
     background-color: var(--fbc);
     border: solid var(--brd-w) var(--brd-clr);
 }
@@ -350,12 +350,12 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(270deg, #033e8a, #e49b0f, #033e8a, #e49b0f, #033e8a, #e49b0f);
-    background-size: 500% 600%;
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    -o-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+    background: linear-gradient(270deg, #79baec, #4682b4, #79baec, #4682b4, #79baec, #4682b4);
+    background-size: 500% 200%;
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    -o-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
 }
 
 .circular-progress::before {
@@ -454,10 +454,11 @@ body {
 
 /* Footer Section */
 footer {
-    border: solid var(--brd-w) var(--brd-clr);
-    background-color: var(--fbc);
+    border-bottom: solid var(--brd-w) var(--brd-clr);
+    /* background: linear-gradient(to bottom, var(--bc-1) 0%, var(--fbc) 100%); */
+    background: linear-gradient(to bottom, var(--bc-1) 0%, color-mix(in srgb, var(--bc-1) 0%, var(--fbc) 50%) 2%, var(--fbc) 100%);
 
-    width: 99.5%;
+    width: 100%;
     padding: 1.2rem 0;
     gap: 1rem;
 
@@ -481,7 +482,6 @@ footer {
 }
 
 .bicon {
-    background-color: var(--fbc);
     border: solid var(--brd-w) var(--brd-clr);
     border-radius: var(--brd-r);
 
@@ -492,7 +492,7 @@ footer {
 
 #social-icons .text-preset-3 {
     position: relative;
-    color: var(--tc-1);
+    color: black;
     text-decoration: none;
     transition: 0.3s;
 }

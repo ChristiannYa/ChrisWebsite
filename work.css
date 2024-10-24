@@ -6,9 +6,10 @@
 #acme-desktop-one {
     transform: rotate(-20deg);
 
-    width: var(--wifd-w);
-    height: var(--wifd-h);
-    left: -0.75rem;
+    width: 17rem;
+    aspect-ratio: 1/1;
+
+    left: 0.75rem;
     top: 0.625rem;
 
     position: absolute;
@@ -18,8 +19,9 @@
 #acme-desktop-two {
     transform: rotate(-10deg);
 
-    width: var(--wifd-w);
-    height: var(--wifd-h);
+    width: 17rem;
+    aspect-ratio: 1/1;
+
     left: 3.125rem;
     top: 3.125rem;
 
@@ -30,8 +32,10 @@
 #acme-desktop-three {
     transform: rotate(10deg);
 
-    width: var(--wifd-w);
-    height: var(--wifd-h);
+    width: 17rem;
+    aspect-ratio: 1 / 1;
+
+
     left: 0rem;
     top: 12.5rem;
 
@@ -88,6 +92,59 @@
 
     left: 0rem;
     top: 10rem;
+
+    position: absolute;
+    z-index: 4;
+}
+
+/* Work Number Four */
+#memory-desktop-one {
+    transform: rotate(-20deg);
+
+    width: 17rem;
+    aspect-ratio: 1/1;
+
+    left: 0.75rem;
+    top: 0.625rem;
+
+    position: absolute;
+    z-index: 5;
+}
+
+#memory-desktop-two {
+    transform: rotate(10deg);
+
+    width: 17rem;
+    aspect-ratio: 1/1;
+
+    left: 4.125rem;
+    top: 6.125rem;
+
+    position: absolute;
+    z-index: 4;
+}
+
+#memory-mobile-one {
+    transform: rotate(-20deg);
+
+    width: 7rem;
+    aspect-ratio: 1/1;
+
+    right: 10.625rem;
+    top: 12rem;
+
+    position: absolute;
+    z-index: 5;
+}
+
+#memory-mobile-two {
+    transform: rotate(20deg);
+
+    width: 7rem;
+    aspect-ratio: 1/1;
+
+    right: 5.625rem;
+    top: 12rem;
 
     position: absolute;
     z-index: 4;
