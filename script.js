@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Your existing click handler code
     document.querySelectorAll('.click').forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
@@ -8,20 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
             this.classList.add('scale');
 
-            // First wait for the scale down
             setTimeout(() => {
-                // Remove scale to trigger grow back
                 this.classList.remove('scale');
-
-                // Wait for grow back to complete, then navigate
                 setTimeout(() => {
                     window.location.href = href;
                 }, linkDuration);
-
             }, linkDuration);
         });
     });
 
+    // Your existing cards/progress code
     const cards = document.querySelectorAll('.card');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -50,5 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     cards.forEach(card => {
         observer.observe(card);
+    });
+
+    // New image protection code
+    document.addEventListener('contextmenu', function (e) {
+        if (e.target.tagName === 'IMG') {
+            e.preventDefault();
+        }
     });
 });

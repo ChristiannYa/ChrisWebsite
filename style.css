@@ -8,6 +8,13 @@ body {
     align-items: center;
 }
 
+img {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
 .container {
     width: 80rem;
     margin: 0 auto;
