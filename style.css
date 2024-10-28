@@ -565,7 +565,7 @@ footer {
     border-radius: var(--brd-r);
 
     width: 3.125rem;
-    aspect-ratio: 1 / 1;
+    height: 3.125rem;
     display: flex;
 }
 

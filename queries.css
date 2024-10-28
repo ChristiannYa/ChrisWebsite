@@ -479,11 +479,6 @@
         gap: 0 3rem;
     }
 
-    .bicon {
-        border: solid 1px red;
-        width: 2.7rem;
-    }
-
     .bicon-text {
         display: none;
     }
