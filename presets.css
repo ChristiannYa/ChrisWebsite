@@ -27,7 +27,7 @@
 
 /* Navigation */
 .text-preset-3 {
-    font-family: var(--ff-1);
+    font-family: var(--ff-2);
     font-size: var(--fs-0);
     font-weight: var(--fw-1);
     color: var(--tc-1);
@@ -69,38 +69,33 @@
     text-align: center;
 }
 
-/* Medium Screen Size */
-@media only screen and (min-width: 711px) and (max-width: 1024px) {
-
-    /* Hi Heading */
-    .text-preset-1 {
-        font-size: calc(var(--fs-4) + .5rem);
-    }
-
-    /* Navigation */
-    .text-preset-3 {
-        font-size: var(--fs-2);
-    }
-}
-
 /* Medium-Small Screen Size */
 @media only screen and (max-width: 710px) {
 
+    /* Navigation */
+    .text-preset-3 {
+        font-size: var(--fs-1);
+    }
+
     /* Hi Heading */
     .text-preset-1 {
-        font-size: calc(var(--fs-4) - .5rem);
+        /* border: solid 1px red; */
+        font-size: calc(var(--fs-4) - 1rem);
         text-align: center;
     }
 
     /* Hi Paragraphs */
     .text-preset-2 {
-        font-size: var(--fs-3);
+        /* border: solid 1px red; */
+        font-size: calc(var(--fs-3) - .125rem);
         color: var(--tc-5);
         text-align: center;
     }
 
     /* Why Titles */
     .text-preset-2-bold {
+        /* border: solid 1px red; */
+        font-size: calc(var(--fs-3) - .125rem);
         text-align: center;
     }
 

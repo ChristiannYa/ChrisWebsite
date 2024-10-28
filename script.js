@@ -1,24 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Your existing click handler code
-    document.querySelectorAll('.click').forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            const href = this.getAttribute('href');
-            const linkDuration = parseInt(getComputedStyle(document.documentElement)
-                .getPropertyValue('--link-duration'));
+    // -------------------------------- //
+    // Cards progress percent animation //
+    // -------------------------------- //
 
-            this.classList.add('scale');
-
-            setTimeout(() => {
-                this.classList.remove('scale');
-                setTimeout(() => {
-                    window.location.href = href;
-                }, linkDuration);
-            }, linkDuration);
-        });
-    });
-
-    // Your existing cards/progress code
     const cards = document.querySelectorAll('.card');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -29,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 let progressValue = 0;
                 let progressEndValue = percentValue;
-                let speed = 25;
+                let speed = 23;
 
                 let progress = setInterval(() => {
                     progressValue++;
@@ -49,10 +33,34 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
-    // New image protection code
+    // ------------------------- //
+    // Image download protection //
+    // ------------------------- //
+
     document.addEventListener('contextmenu', function (e) {
         if (e.target.tagName === 'IMG') {
             e.preventDefault();
+        }
+    });
+
+    // ------------------------------- //
+    // Navigation toggle functionality //
+    // ------------------------------- //
+
+    const navWrap = document.getElementById('nav-as-wrap');
+
+    navWrap.addEventListener('click', function (event) {
+        if (!this.classList.contains('active')) {
+            this.classList.add('active');
+            this.parentElement.classList.add('active');
+            event.stopPropagation();
+        }
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!navWrap.contains(event.target) && navWrap.classList.contains('active')) {
+            navWrap.classList.remove('active');
+            navWrap.parentElement.classList.remove('active');
         }
     });
 });

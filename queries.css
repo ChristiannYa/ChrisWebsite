@@ -46,20 +46,74 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    #nav-container {
+        /* overflow: visible; */
+        border-radius: 0rem;
+
+        width: 2.2rem;
+        aspect-ratio: 1/1;
+        right: 3%;
+
+        transition: all 0.3s ease;
+    }
+
+    #nav-container.active {
+        width: 6rem;
+        height: auto;
+    }
+
+    #nav-as-wrap {
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    #nav-as {
+        opacity: 0;
+        transition: all 0.3s ease;
+        visibility: hidden;
+        display: none;
+
+        width: 100%;
+        margin: 0;
+        gap: 2rem 0;
+
+        flex-direction: column;
+    }
+
+    #nav-as-wrap.active {
+        border-radius: var(--brd-r);
+
+        min-height: fit-content;
+    }
+
+    #nav-as-wrap.active #nav-as {
+        opacity: 1;
+        visibility: visible;
+
+        padding: 1.5rem;
+
+        display: flex;
+        pointer-events: all;
+    }
+
+    #nav-as a {
+        pointer-events: none;
+    }
+
+    #nav-as-wrap.active #nav-as a {
+        pointer-events: all;
+    }
+
+    /* Disable laptop navigation effects */
     #nav-as a:hover:after {
         width: 0;
     }
 
     .hover-underline:after {
         display: none;
-    }
-
-    .click {
-        transition: transform 0.4s ease-out;
-    }
-
-    .scale {
-        transform: scale(0.9);
     }
 }
 
@@ -261,13 +315,7 @@
 
     #intro-text>p {
         /* border: solid 1px red; */
-        font-size: 3rem;
         text-align: center;
-    }
-
-    #intro-text #intro-ps {
-        /* border: solid 1px red; */
-        font-size: 1.5rem;
     }
 
     #dots {
@@ -383,13 +431,12 @@
     }
 
     #why-page .page-title-m {
-        font-size: 2.8rem;
         /* border: solid 1px red; */
+        font-size: 2.8rem;
     }
 
     #why-hero p {
         /* border: solid 1px red; */
-        font-size: 1.4rem;
         text-align: center;
     }
 
@@ -400,7 +447,7 @@
     }
 
     .why-text>p:nth-child(1) {
-        font-size: 1.5rem;
+        /* border: solid 1px red; */
         text-align: center;
 
         height: fit-content;
@@ -408,7 +455,7 @@
     }
 
     .why-text>p:nth-child(2) {
-        font-size: 1.4rem;
+        /* border: solid 1px red; */
         text-align: center;
 
         height: fit-content;
