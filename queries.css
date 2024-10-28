@@ -48,10 +48,10 @@
 @media only screen and (max-width: 1024px) {
     #nav-container {
         /* overflow: visible; */
-        border-radius: 0rem;
 
-        width: 2.2rem;
+        width: 2.8rem;
         aspect-ratio: 1/1;
+        top: 1%;
         right: 3%;
 
         transition: all 0.3s ease;
@@ -477,6 +477,11 @@
 
     #social-icons {
         gap: 0 3rem;
+    }
+
+    .bicon {
+        border: solid 1px red;
+        width: 2.7rem;
     }
 
     .bicon-text {
