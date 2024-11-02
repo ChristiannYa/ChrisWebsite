@@ -444,10 +444,10 @@ img {
     background: linear-gradient(270deg, #3944bc, #25b2cf, #3944bc, #25b2cf, #3944bc, #25b2cf);
 
     background-size: 200% 500%;
-    -webkit-animation: circleFill 10s ease infinite;
-    -moz-animation: circleFill 10s ease infinite;
-    -o-animation: circleFill 10s ease infinite;
-    animation: circleFill 10s ease infinite;
+    -webkit-animation: circleFill 9s ease infinite;
+    -moz-animation: circleFill 9s ease infinite;
+    -o-animation: circleFill 9s ease infinite;
+    animation: circleFill 9s ease infinite;
 }
 
 .circular-progress::before {
