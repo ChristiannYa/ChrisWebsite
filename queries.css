@@ -21,7 +21,6 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        /* gap: 2rem 3rem; */
     }
 
     .card-one {
@@ -37,11 +36,15 @@
     }
 
     .card-four {
-        grid-area: 2 / 2 / 3 / 4;
+        grid-area: 2 / 1 / 3 / 3;
     }
 
     .card-five {
-        grid-area: 2 / 4 / 3 / 6;
+        grid-area: 2 / 3 / 3 / 5;
+    }
+
+    .card-six {
+        grid-area: 2 / 5 / 3 / 7;
     }
 }
 
@@ -188,29 +191,33 @@
 
     #cards {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, 1fr);
         /* gap: 2rem 3rem; */
     }
 
     .card-one {
-        grid-area: 1 / 1 / 2 / 3;
+        grid-area: 1 / 2 / 2 / 4;
     }
 
     .card-two {
-        grid-area: 1 / 3 / 2 / 5;
+        grid-area: 1 / 4 / 2 / 6;
     }
 
     .card-three {
-        grid-area: 2 / 1 / 3 / 3;
+        grid-area: 2 / 2 / 3 / 4;
     }
 
     .card-four {
-        grid-area: 2 / 3 / 3 / 5;
+        grid-area: 2 / 4 / 3 / 6;
     }
 
     .card-five {
         grid-area: 3 / 2 / 4 / 4;
+    }
+
+    .card-six {
+        grid-area: 3 / 4 / 4 / 6;
     }
 
     /* Why Page */
@@ -349,7 +356,6 @@
     }
 
     #works-wrap {
-        /* border: solid 1px red; */
         width: 100%;
 
         display: flex;
@@ -367,10 +373,11 @@
     }
 
     .work {
+        /* border: solid 1px red; */
         flex: 0 0 100%;
         scroll-snap-align: center;
         width: calc(100% - 2rem);
-        max-width: 23.75rem;
+        max-width: 23rem;
     }
 
     .work-desc {
@@ -386,6 +393,7 @@
     }
 
     .work-images-container {
+        /* border: solid 1px red; */
         width: 100%;
     }
 
@@ -473,6 +481,11 @@
     footer {
         background: linear-gradient(to bottom, var(--bc-1) 0%, color-mix(in srgb, var(--bc-1) 0%, var(--fbc) 0%) 0%, var(--fbc) 0%);
         width: 100%;
+    }
+
+    .bicon {
+        width: 2.6em;
+        height: 2.6rem;
     }
 
     #social-icons {

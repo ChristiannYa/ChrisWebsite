@@ -5,5 +5,6 @@
         "finfo",
         "wifd",
         "wifm"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

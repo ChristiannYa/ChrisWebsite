@@ -54,9 +54,9 @@
 /* Card Titles */
 .text-preset-5 {
     font-family: var(--ff-1);
-    font-size: var(--fs-2);
+    font-size: var(--fs-1);
     font-weight: var(--fw-2);
-    color: var(--tc-1);
+    color: white;
     text-align: start;
 }
 
