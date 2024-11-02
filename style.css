@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(270deg, #101d6b, #1d2951);
+    background: linear-gradient(270deg, #023781, #1d2951);
 
     display: flex;
     flex-direction: column;
@@ -39,10 +39,6 @@ img {
 
 .highlight {
     font-weight: var(--fw-2);
-}
-
-#dots {
-    display: show;
 }
 
 .gradient {
@@ -96,7 +92,7 @@ img {
     }
 
     100% {
-        box-shadow: 0px 0px 6px #59788E;
+        box-shadow: 0px 0px 6px #48AAAD;
     }
 }
 
@@ -275,7 +271,7 @@ img {
     /* border-radius: calc(var(--brd-r) - 0.8rem); */
     animation: spin 5s linear infinite;
 
-    width: 25px;
+    width: 30px;
     aspect-ratio: 1/1;
 }
 
@@ -599,8 +595,8 @@ footer {
     border: none;
     border-radius: var(--brd-r);
 
-    width: 3rem;
-    height: 3rem;
+    width: 2.8rem;
+    height: 2.8rem;
     display: flex;
 }
 
