@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(270deg, #1d2951, #4863ac);
+    background: linear-gradient(270deg, #101d6b, #1d2951);
 
     display: flex;
     flex-direction: column;
@@ -31,7 +31,6 @@ img {
 
 .page-title {
     display: flex;
-    /* align-self: start; */
 }
 
 .page-title-m {
@@ -49,7 +48,6 @@ img {
 .gradient {
     background: linear-gradient(90deg, var(--tc-5), var(--tc-2), var(--tc-3));
     background-size: 300%;
-    animation: gradient 2s cubic-bezier(0.4, 0, 1, 1) infinite;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -68,9 +66,9 @@ img {
     background: rgba(255, 255, 255, 0.3);
     border: none;
     border-radius: var(--brd-r);
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
     animation: shadowColorChange 10s infinite;
 
     margin-top: 1rem;
@@ -87,17 +85,14 @@ img {
 
     25% {
         box-shadow: 0px 0px 6px #3771C8;
-        /* Light pink */
     }
 
     50% {
         box-shadow: 0px 0px 6px #82EEFD;
-        /* Light blue */
     }
 
     75% {
         box-shadow: 0px 0px 6px #0277BD;
-        /* Light green */
     }
 
     100% {
@@ -269,7 +264,6 @@ img {
     position: absolute;
     left: var(--horizontal-padding);
     right: var(--horizontal-padding);
-    /* Adjust this value to create space between text and underline */
     bottom: 0.2rem;
 }
 
@@ -471,10 +465,10 @@ img {
     background: linear-gradient(270deg, #4682b4, #79baec, #4682b4, #79baec, #4682b4, #79baec);
 
     background-size: 200% 500%;
-    -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    -o-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
+    -webkit-animation: circleFill 12s ease infinite;
+    -moz-animation: circleFill 12s ease infinite;
+    -o-animation: circleFill 12s ease infinite;
+    animation: circleFill 12s ease infinite;
 }
 
 .circular-progress::before {
@@ -503,7 +497,7 @@ img {
     z-index: 3;
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes circleFill {
     0% {
         background-position: 0% 50%
     }
@@ -517,7 +511,7 @@ img {
     }
 }
 
-@-moz-keyframes AnimationName {
+@-moz-keyframes circleFill {
     0% {
         background-position: 0% 50%
     }
@@ -531,7 +525,7 @@ img {
     }
 }
 
-@keyframes AnimationName {
+@keyframes circleFill {
     0% {
         background-position: 0% 50%
     }

@@ -154,11 +154,14 @@
     }
 
     #intro-text {
-        width: 100%;
+        width: 80%;
     }
 
     #my-frame {
         margin-top: 3rem;
+
+        width: 26.125rem;
+        height: 26.75rem;
     }
 
     /* Works Page */
@@ -168,10 +171,11 @@
 
     #works-wrap {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem 4rem;
+        gap: 2.5rem 3rem;
     }
 
     .work {
+        /* border: solid 1px blue; */
         width: 100%;
     }
 
@@ -180,6 +184,7 @@
     }
 
     .work-images-container {
+        /* border: solid 1px red; */
         width: 100%;
     }
 

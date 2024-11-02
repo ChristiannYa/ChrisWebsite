@@ -10,15 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 const progressElement = entry.target.querySelector('.circular-progress');
                 const valueElement = entry.target.querySelector('.progress-value');
                 const percentValue = parseInt(valueElement.textContent);
-
                 let progressValue = 0;
                 let progressEndValue = percentValue;
-                let speed = 23;
+                let speed = 25;
 
                 let progress = setInterval(() => {
                     progressValue++;
                     valueElement.textContent = `${progressValue}%`;
                     progressElement.style.setProperty('--progress-angle', `${progressValue * 3.6}deg`);
+
                     if (progressValue == progressEndValue) {
                         clearInterval(progress);
                     }
@@ -29,9 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.5 });
 
-    cards.forEach(card => {
-        observer.observe(card);
-    });
+    cards.forEach(card => observer.observe(card));
 
     // ------------------------- //
     // Image download protection //
@@ -46,19 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // ------------------------------- //
     // Navigation toggle functionality //
     // ------------------------------- //
-
     const navWrap = document.getElementById('nav-as-wrap');
 
-    navWrap.addEventListener('click', function (event) {
-        if (!this.classList.contains('active')) {
-            this.classList.add('active');
-            this.parentElement.classList.add('active');
-            event.stopPropagation();
-        }
-    });
-
-    document.addEventListener('click', function (event) {
-        if (!navWrap.contains(event.target) && navWrap.classList.contains('active')) {
+    document.addEventListener('click', e => {
+        if (navWrap.contains(e.target)) {
+            navWrap.classList.toggle('active');
+            navWrap.parentElement.classList.toggle('active');
+            e.stopPropagation();
+        } else if (navWrap.classList.contains('active')) {
             navWrap.classList.remove('active');
             navWrap.parentElement.classList.remove('active');
         }
