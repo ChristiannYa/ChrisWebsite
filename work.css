@@ -7,7 +7,6 @@
     transform: rotate(-20deg);
 
     width: 17rem;
-    aspect-ratio: 1/1;
 
     left: 0.75rem;
     top: 0.625rem;
@@ -148,4 +147,53 @@
 
     position: absolute;
     z-index: 4;
+}
+
+/* Work Number Five */
+#tg-photo-one {
+    transform: rotate(-20deg);
+
+    width: 17rem;
+
+    left: 0.45rem;
+    top: 2.25rem;
+
+    position: absolute;
+    z-index: 5;
+}
+
+#tg-photo-two {
+    transform: rotate(-10deg);
+
+    width: 17rem;
+
+    left: 1.125rem;
+    top: 9.125rem;
+
+    position: absolute;
+    z-index: 4;
+}
+
+#tgs-photo-one {
+    transform: rotate(25deg);
+
+    width: var(--wifm-w);
+    height: var(--wifm-h);
+    left: 15.625rem;
+    top: 10.5rem;
+
+    position: absolute;
+    z-index: 5;
+}
+
+#tgs-photo-two {
+    transform: rotate(10deg);
+
+    width: var(--wifm-w);
+    height: var(--wifm-h);
+    left: 11.625rem;
+    top: 10.5rem;
+
+    position: absolute;
+    z-index: 5;
 }

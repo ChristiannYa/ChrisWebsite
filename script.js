@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // ---------------------------- //
+    // Clicked link auto adjustment //
+    // ---------------------------- //
+
     function adjustPageSpacing() {
         const navContainer = document.getElementById('nav-container');
         const navHeight = navContainer.offsetHeight;
@@ -6,19 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const windowWidth = window.innerWidth;
 
         pages.forEach(page => {
-            // Different spacing for mobile vs desktop
             if (windowWidth <= 1024) {
-                page.style.scrollMarginTop = '20px'; // Smaller fixed value for mobile
+                page.style.scrollMarginTop = '20px';
             } else {
-                page.style.scrollMarginTop = `${navHeight + 20}px`; // Original desktop spacing
+                page.style.scrollMarginTop = `${navHeight + 20}px`;
             }
         });
     }
 
-    // Run on page load
     adjustPageSpacing();
 
-    // Add a small delay for resize events to prevent glitches
     let resizeTimer;
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimer);
@@ -82,4 +83,10 @@ document.addEventListener('DOMContentLoaded', () => {
             navWrap.parentElement.classList.remove('active');
         }
     });
+
+    // --------------------- //
+    // Automatic year change //
+    // --------------------- //
+    const yearSpan = document.getElementById('year');
+    yearSpan.textContent = new Date().getFullYear();
 });

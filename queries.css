@@ -47,8 +47,7 @@
     #nav-container {
         width: 2.8rem;
         aspect-ratio: 1/1;
-        top: 1rem;
-        right: 2rem;
+        right: 1rem;
 
         transition: all 0.3s ease;
     }
@@ -249,10 +248,6 @@
         position: relative;
     }
 
-    /* #why-grid .why-text .different-p-title {
-        text-align: center;
-    } */
-
     #different-p-one {
         grid-area: 1 / 1 / 2 / 3;
     }
@@ -286,11 +281,6 @@
 
     .page-title {
         display: none;
-    }
-
-    /* Top Navigation */
-    #nav-as-wrap {
-        margin-top: .5rem;
     }
 
     /* Landing Page */
@@ -410,6 +400,8 @@
 
     /* Different Page */
     #why-grid {
+        gap: 1rem 0;
+
         display: flex;
         flex-direction: column;
     }
@@ -418,7 +410,6 @@
         text-align: center;
 
         height: fit-content;
-        margin: 2rem 0 .1rem;
     }
 
     .why-text>p:nth-child(2) {
