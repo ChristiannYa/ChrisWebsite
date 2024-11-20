@@ -1,4 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
+    function adjustPageSpacing() {
+        const navContainer = document.getElementById('nav-container');
+        const navHeight = navContainer.offsetHeight;
+        const pages = document.querySelectorAll('.page');
+        const windowWidth = window.innerWidth;
+
+        pages.forEach(page => {
+            // Different spacing for mobile vs desktop
+            if (windowWidth <= 1024) {
+                page.style.scrollMarginTop = '20px'; // Smaller fixed value for mobile
+            } else {
+                page.style.scrollMarginTop = `${navHeight + 20}px`; // Original desktop spacing
+            }
+        });
+    }
+
+    // Run on page load
+    adjustPageSpacing();
+
+    // Add a small delay for resize events to prevent glitches
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(adjustPageSpacing, 100);
+    });
+
     // -------------------------------- //
     // Cards progress percent animation //
     // -------------------------------- //

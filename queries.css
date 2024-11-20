@@ -1,4 +1,3 @@
-/* Remaining */
 @media only screen and (max-width: 1280px) {
     .container {
         width: 95%;
@@ -12,10 +11,6 @@
     }
 
     /* Skills Page */
-    #skills-page {
-        height: fit-content;
-        padding-top: 4rem;
-    }
 
     #cards {
         display: grid;
@@ -50,12 +45,10 @@
 
 @media only screen and (max-width: 1024px) {
     #nav-container {
-        /* overflow: visible; */
-
         width: 2.8rem;
         aspect-ratio: 1/1;
-        top: 1%;
-        right: 3%;
+        top: 1rem;
+        right: 2rem;
 
         transition: all 0.3s ease;
     }
@@ -141,6 +134,11 @@
     .hover-underline:after {
         display: none;
     }
+
+    /* Landing page */
+    #landing-page {
+        margin-top: 1rem;
+    }
 }
 
 /* Tablet Screen */
@@ -156,7 +154,6 @@
     /* Top Navigation */
     #nav-as {
         margin: .15rem 1.5rem;
-        /* gap: 0 1.5rem; */
     }
 
     .click {
@@ -168,10 +165,6 @@
     }
 
     /* Landing Page */
-    #landing-page {
-        margin-top: 4rem;
-    }
-
     #intro-container {
         flex-direction: column;
     }
@@ -188,17 +181,12 @@
     }
 
     /* Works Page */
-    #work-page {
-        padding-top: 4rem;
-    }
-
     #works-wrap {
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem 3rem;
     }
 
     .work {
-        /* border: solid 1px blue; */
         width: 100%;
     }
 
@@ -207,21 +195,18 @@
     }
 
     .work-images-container {
-        /* border: solid 1px red; */
         width: 100%;
     }
 
     /* Skills Page */
     #skills-page {
         height: fit-content;
-        padding-top: 4rem;
     }
 
     #cards {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        /* gap: 2rem 3rem; */
     }
 
     .card-one {
@@ -248,22 +233,10 @@
         grid-area: 3 / 4 / 4 / 6;
     }
 
-    /* Why Page */
-    #why-page {
-        margin-top: 7rem;
-    }
-
-    #why-hero p:nth-child(2) {
-        text-align: center;
-    }
-
     /* Different Page */
-    #different-page {
-        margin-top: 7rem;
-    }
 
     #why-grid {
-        gap: 2rem;
+        gap: 1rem;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
@@ -276,15 +249,9 @@
         position: relative;
     }
 
-    #why-grid .why-text .different-p-title {
+    /* #why-grid .why-text .different-p-title {
         text-align: center;
-    }
-
-    #why-grid .why-text p:nth-child(2) {
-        text-align: center;
-
-        align-self: center;
-    }
+    } */
 
     #different-p-one {
         grid-area: 1 / 1 / 2 / 3;
@@ -301,18 +268,10 @@
     #different-p-four {
         grid-area: 2 / 3 / 3 / 5;
     }
-
-    footer {
-        margin-top: 4rem;
-    }
 }
 
 /* Medium-Small Screen Size */
 @media only screen and (max-width: 710px) {
-    .page {
-        margin-top: 0rem;
-    }
-
     body {
         padding-bottom: 0;
     }
@@ -322,7 +281,6 @@
     }
 
     .page-title-m {
-        /* border: solid 1px red; */
         display: block;
     }
 
@@ -336,9 +294,6 @@
     }
 
     /* Landing Page */
-    #landing-page {
-        margin-top: 5rem;
-    }
 
     #intro-container {
         flex-direction: column-reverse;
@@ -349,7 +304,6 @@
     }
 
     #intro-text>p {
-        /* border: solid 1px red; */
         text-align: center;
     }
 
@@ -365,17 +319,9 @@
     /* Work Page */
     #work-page {
         flex-direction: column;
-
-        padding-top: 3.8rem;
-    }
-
-    #work-page #works-wrap {
-        margin-top: .9rem;
     }
 
     #work-page>p:nth-child(1) {
-        /* border: solid 1px red; */
-
         margin-bottom: -1.1rem;
     }
 
@@ -397,7 +343,6 @@
     }
 
     .work {
-        /* border: solid 1px red; */
         flex: 0 0 100%;
         scroll-snap-align: center;
         width: calc(100% - 2rem);
@@ -417,7 +362,6 @@
     }
 
     .work-images-container {
-        /* border: solid 1px red; */
         width: 100%;
     }
 
@@ -426,8 +370,6 @@
         flex-direction: column;
 
         height: fit-content;
-        margin-top: 0rem;
-        padding-top: 4rem;
     }
 
     #skills-page .container {
@@ -435,7 +377,6 @@
     }
 
     #cards {
-        /* border: solid 1px white; */
         width: 100%;
         padding: .6rem 0;
         margin: 0rem;
@@ -458,17 +399,12 @@
     }
 
     /* Why Hire Me Page */
-    #why-page {
-        margin-top: 5rem;
-    }
 
     #why-page .page-title-m {
-        /* border: solid 1px red; */
         font-size: 2.8rem;
     }
 
     #why-hero p {
-        /* border: solid 1px red; */
         text-align: center;
     }
 
@@ -479,7 +415,6 @@
     }
 
     .why-text>p:nth-child(1) {
-        /* border: solid 1px red; */
         text-align: center;
 
         height: fit-content;
@@ -487,34 +422,12 @@
     }
 
     .why-text>p:nth-child(2) {
-        /* border: solid 1px red; */
         text-align: center;
 
         height: fit-content;
     }
 
-    #last-page {
-        padding-bottom: 1.5rem;
-    }
-
-    #different-page {
-        margin-bottom: 3rem;
-    }
-
     /* Footer */
-    footer {
-        background: linear-gradient(to bottom, var(--bc-1) 0%, color-mix(in srgb, var(--bc-1) 0%, var(--fbc) 0%) 0%, var(--fbc) 0%);
-        width: 100%;
-    }
-
-    .bicon {
-        width: 2.6em;
-        height: 2.6rem;
-    }
-
-    #social-icons {
-        gap: 0 3rem;
-    }
 
     .bicon-text {
         display: none;
