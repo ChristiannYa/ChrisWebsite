@@ -311,10 +311,15 @@ img {
    -webkit-backdrop-filter: blur(1px);
    overflow: hidden;
 
-   width: var(--wi-w);
-   height: var(--wi-h);
+   width: fit-content;
+   height: fit-content;
 
    position: relative;
+}
+
+.work-image-acme {
+   width: 100%;
+   height: 100%;
 }
 
 .work-desc {
