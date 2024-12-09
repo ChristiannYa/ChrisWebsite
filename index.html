@@ -1,545 +1,714 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <title>Christian Lopez</title>
+      <link rel="icon" type="image/x-icon" href="icons/page-i.svg" />
 
-    <title>Christian Lopez</title>
-    <link rel="icon" type="image/x-icon" href="icons/page-i.svg">
+      <script src="script.js" defer></script>
 
-    <script src="script.js" defer></script>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="var.css" />
+      <link rel="stylesheet" href="reset.css" />
+      <link rel="stylesheet" href="presets.css" />
+      <link rel="stylesheet" href="work.css" />
+      <link rel="stylesheet" href="queries.css" />
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="var.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="presets.css">
-    <link rel="stylesheet" href="work.css">
-    <link rel="stylesheet" href="queries.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+         rel="stylesheet"
+      />
+   </head>
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
-
-</head>
-
-<body id="body">
-    <!-- Top Navigation -->
-    <section id="nav-container">
-        <nav id="nav-as-wrap">
+   <body id="body">
+      <!-- Top Navigation -->
+      <section id="nav-container">
+         <nav id="nav-as-wrap">
             <div id="nav-as">
-                <a class="text-preset-3 click" href="#body">Home</a>
-                <a class="text-preset-3 click" href="#work-page">Work</a>
-                <img id="cwd-logo" src="icons/cwd-logo.png" alt="Christian's Logo">
-                <a class="text-preset-3 click" href="#skills-page">Skills</a>
-                <a class="text-preset-3 click" href="mailto:chris.lopez.webdev@gmail.com" target="_blank"
-                    rel="noopener noreferrer" title="Send an email">Contact</a>
+               <a class="text-preset-3 click" href="#body">Home</a>
+               <a class="text-preset-3 click" href="#work-page">Work</a>
+               <img
+                  id="cwd-logo"
+                  src="icons/cwd-logo.png"
+                  alt="Christian's Logo"
+               />
+               <a class="text-preset-3 click" href="#skills-page">Skills</a>
+               <a
+                  class="text-preset-3 click"
+                  href="mailto:chris.lopez.webdev@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Send an email"
+                  >Contact</a
+               >
             </div>
-        </nav>
-    </section>
+         </nav>
+      </section>
 
-
-
-
-    <!-- Landing Page -->
-    <section class="page" id="landing-page">
-        <div class="container">
-
+      <!-- Landing Page -->
+      <section class="page" id="landing-page">
+         <div class="container">
             <!-- Text Introduction Wrap -->
             <div id="intro-container">
-                <span id="intro-text">
-                    <p class="text-preset-1">Hi, I am Christian</p>
-                    <span class="text-preset-2" id="intro-ps">
-                        <p class="gradient">
-                            <span class="highlight">Front-End Web Developer</span>
-                            and <span class="highlight">UI Designer</span> committed to deliver an engaging,
-                            user-friendly web experience that seamlessly blends art and function.
-                        </p>
-                        <p class="gradient">
-                            When I'm not immersed in my work, you'll find me having a walk with my dogs,
-                            listening to music, cooking, playing chess, or watching tv show/anime.
-                        </p>
-                        <p class="gradient">
-                            Whether you are a small business or large company, I'm committed to making your projects
-                            <b>grow</b> and <b>succeed</b>!
-                        </p>
-                    </span>
-                </span>
+               <span id="intro-text">
+                  <p class="text-preset-1">Hi, I am Christian</p>
+                  <span class="text-preset-2" id="intro-ps">
+                     <p class="gradient">
+                        <span class="highlight">Front-End Web Developer</span>
+                        and <span class="highlight">UI Designer</span> committed
+                        to deliver an engaging, user-friendly web experience
+                        that seamlessly blends art and function.
+                     </p>
+                     <p class="gradient">
+                        When I'm not immersed in my work, you'll find me having
+                        a walk with my dogs, listening to music, cooking,
+                        playing chess, or watching tv show/anime.
+                     </p>
+                     <p class="gradient">
+                        Whether you are a small business or large company, I'm
+                        committed to making your projects
+                        <b>grow</b> and <b>succeed</b>!
+                     </p>
+                  </span>
+               </span>
 
-                <!-- Photo Frame -->
-                <div id="my-frame">
-                    <div id="my-photo-frame">
-                        <img src="images/me.png" alt="My Photo">
-                    </div>
-                </div>
-            </div> <!-- Introduction Container -->
+               <!-- Photo Frame -->
+               <div id="my-frame">
+                  <div id="my-photo-frame">
+                     <img src="images/me.png" alt="My Photo" />
+                  </div>
+               </div>
+            </div>
+            <!-- Introduction Container -->
+         </div>
+      </section>
 
-        </div>
-    </section>
-
-
-
-
-    <!-- Works Page -->
-    <section class="page" id="work-page">
-        <p class="text-preset-6 page-title-m gradient">Work</p>
-        <p class="text-preset-4 page-title-m">(swipe)</p>
-        <div class="container">
-
+      <!-- Works Page -->
+      <section class="page" id="work-page">
+         <p class="text-preset-6 page-title-m gradient">Work</p>
+         <p class="text-preset-4 page-title-m">(swipe)</p>
+         <div class="container">
             <p class="text-preset-6 page-title gradient">Work</p>
 
             <!-- Work Wrap -->
             <div id="works-wrap">
+               <!-- Work Number One (Acme) -->
+               <div class="work" id="first-work">
+                  <div class="works-more-info-container">
+                     <div class="tools-used-container">
+                        <img
+                           class="tool-used"
+                           src="icons/css-icon.svg"
+                           alt="CSS logo icon"
+                        />
+                        <img
+                           class="tool-used"
+                           src="icons/html-icon.svg"
+                           alt="HTML logo icon"
+                        />
+                     </div>
+                  </div>
 
-                <!-- Work Number One (Acme) -->
-                <div class="work" id="first-work">
+                  <div class="work-images-container">
+                     <span class="work-image" id="acme-desktop-one"
+                        ><img src="images/acme(1).png" alt="Work image"
+                     /></span>
+                     <span class="work-image" id="acme-desktop-two"
+                        ><img src="images/acme(2).png" alt="Work image"
+                     /></span>
+                     <span class="work-image" id="acme-desktop-three"
+                        ><img src="images/acme(3).png" alt="Work image"
+                     /></span>
+                     <span class="work-image" id="acme-mobile-one"
+                        ><img src="images/acme-small(1).png" alt="Work image"
+                     /></span>
+                  </div>
+                  <div class="work-desc text-preset-4">
+                     <p class="text-preset-4-bold">Outdoors Shop Website</p>
+                     <p>
+                        Gear up your next adventure with a collection of premium
+                        <span class="highlight"
+                           >outdoor and adventure gear</span
+                        >
+                        designed for every explorer.
+                     </p>
+                  </div>
+               </div>
 
-                    <div class="works-more-info-container">
-                        <div class="tools-used-container">
-                            <img class="tool-used" src="icons/css-icon.svg" alt="CSS logo icon">
-                            <img class="tool-used" src="icons/html-icon.svg" alt="HTML logo icon">
-                        </div>
-                    </div>
+               <!-- Work Number Two (Menu Cart)-->
+               <div class="work">
+                  <div class="works-more-info-container">
+                     <div class="tools-used-container">
+                        <img
+                           class="tool-used"
+                           src="icons/css-icon.svg"
+                           alt="CSS logo icon"
+                        />
+                        <img
+                           class="tool-used"
+                           src="icons/html-icon.svg"
+                           alt="HTML logo icon"
+                        />
+                        <img
+                           class="tool-used"
+                           src="icons/js-icon.svg"
+                           alt="JS logo icon"
+                        />
+                     </div>
+                  </div>
 
-                    <div class="work-images-container">
-                        <span class="work-image" id="acme-desktop-one"><img src="images/acme(1).png"
-                                alt="Work image"></span>
-                        <span class="work-image" id="acme-desktop-two"><img src="images/acme(2).png"
-                                alt="Work image"></span>
-                        <span class="work-image" id="acme-desktop-three"><img src="images/acme(3).png"
-                                alt="Work image"></span>
-                        <span class="work-image" id="acme-mobile-one"><img src="images/acme-small(1).png"
-                                alt="Work image"></span>
-                    </div>
-                    <div class="work-desc text-preset-4">
-                        <p class="text-preset-4-bold">
-                            Outdoors Shop Website
-                        </p>
-                        <p>
-                            Gear up your next adventure with a collection of premium <span class="highlight">outdoor and
-                                adventure gear</span> designed for every explorer.
-                        </p>
-                    </div>
-                </div>
+                  <div class="work-images-container">
+                     <span class="work-image" id="menu-photo-one"
+                        ><img
+                           src="images/shopping-menu(1).png"
+                           alt="Work image"
+                     /></span>
+                     <span class="work-image" id="menu-photo-two"
+                        ><img
+                           src="images/shopping-menu(2).png"
+                           alt="Work image"
+                     /></span>
+                  </div>
+                  <div class="work-desc text-preset-4">
+                     <p class="text-preset-4-bold">Menu with shopping cart</p>
+                     <p>
+                        <span class="highlight"
+                           >Interactive menu shopping experience</span
+                        >
+                        where users can browse items, add them to their cart,
+                        adjust quantities, and see their total order value.
+                     </p>
+                  </div>
+               </div>
 
-                <!-- Work Number Two (Menu Cart)-->
-                <div class="work">
+               <!-- Work Number Three (Memory Game)-->
+               <div class="work">
+                  <div class="works-more-info-container">
+                     <div class="tools-used-container">
+                        <span
+                           ><img
+                              class="tool-used"
+                              src="icons/css-icon.svg"
+                              alt="CSS logo icon"
+                        /></span>
+                        <span
+                           ><img
+                              class="tool-used"
+                              src="icons/html-icon.svg"
+                              alt="HTML logo icon"
+                        /></span>
+                        <span
+                           ><img
+                              class="tool-used"
+                              src="icons/js-icon.svg"
+                              alt="JS logo icon"
+                        /></span>
+                     </div>
+                  </div>
 
-                    <div class="works-more-info-container">
-                        <div class="tools-used-container">
-                            <img class="tool-used" src="icons/css-icon.svg" alt="CSS logo icon">
-                            <img class="tool-used" src="icons/html-icon.svg" alt="HTML logo icon">
-                            <img class="tool-used" src="icons/js-icon.svg" alt="JS logo icon">
-                        </div>
-                    </div>
+                  <div class="work-images-container">
+                     <span class="work-image" id="memory-desktop-one"
+                        ><img src="images/memory.png" alt="Work-image"
+                     /></span>
+                     <span class="work-image" id="memory-desktop-two"
+                        ><img src="images/memory(2).png" alt="Work-image"
+                     /></span>
+                     <span class="work-image" id="memory-mobile-one"
+                        ><img src="images/memory-small.png" alt="Work-image"
+                     /></span>
+                     <span class="work-image" id="memory-mobile-two"
+                        ><img src="images/memory-small(2).png" alt="Work-image"
+                     /></span>
+                  </div>
+                  <div class="work-desc text-preset-4">
+                     <p class="text-preset-4-bold">Memory Game</p>
+                     <p>
+                        Features difficulty levels, score tracking, stopwatch,
+                        and a responsive design, while saving player scores via
+                        local storage.
+                     </p>
+                  </div>
 
-                    <div class="work-images-container">
-                        <span class="work-image" id="menu-photo-one"><img src="images/shopping-menu(1).png"
-                                alt="Work image"></span>
-                        <span class="work-image" id="menu-photo-two"><img src="images/shopping-menu(2).png"
-                                alt="Work image"></span>
-                    </div>
-                    <div class="work-desc text-preset-4">
-                        <p class="text-preset-4-bold">
-                            Menu with shopping cart
-                        </p>
-                        <p>
-                            <span class="highlight">Interactive menu shopping experience</span> where users can browse
-                            items, add them to their cart, adjust quantities, and see their total order value.
-                        </p>
-                    </div>
-                </div>
+                  <div class="works-more-info-container">
+                     <div class="more-info-links-container">
+                        <span class="more-info-link-wrap">
+                           <a
+                              href="https://christiannya.github.io/Memory-Game/"
+                              class="text-preset-3 hover-underline click"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >View More</a
+                           >
+                        </span>
+                        <span class="more-info-link-wrap">
+                           <a
+                              href="https://github.com/ChristiannYa/Memory-Game/blob/main/script.js"
+                              class="text-preset-3 hover-underline click"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >View Code</a
+                           >
+                        </span>
+                     </div>
+                  </div>
+               </div>
 
-                <!-- Work Number Three (Memory Game)-->
-                <div class="work">
+               <!-- Work Number Four (Photgraphy Website) -->
+               <div class="work">
+                  <div class="works-more-info-container">
+                     <div class="tools-used-container">
+                        <img
+                           class="tool-used"
+                           src="icons/css-icon.svg"
+                           alt="CSS logo icon"
+                        />
+                        <img
+                           class="tool-used"
+                           src="icons/html-icon.svg"
+                           alt="HTML logo icon"
+                        />
+                        <img
+                           class="tool-used"
+                           src="icons/js-icon.svg"
+                           alt="JS logo icon"
+                        />
+                        <img
+                           class="tool-used"
+                           src="icons/php-icon.svg"
+                           alt="JS logo icon"
+                        />
+                     </div>
+                  </div>
 
-                    <div class="works-more-info-container">
-                        <div class="tools-used-container">
-                            <span><img class="tool-used" src="icons/css-icon.svg" alt="CSS logo icon"></span>
-                            <span><img class="tool-used" src="icons/html-icon.svg" alt="HTML logo icon"></span>
-                            <span><img class="tool-used" src="icons/js-icon.svg" alt="JS logo icon"></span>
-                        </div>
+                  <div class="work-images-container">
+                     <span class="work-image" id="tg-photo-one"
+                        ><img src="images/tg-website(1).jpeg" alt="Work image"
+                     /></span>
+                     <span class="work-image" id="tg-photo-two"
+                        ><img src="images/tg-website(2).jpeg" alt="Work image"
+                     /></span>
+                     <span class="work-image" id="tgs-photo-one"
+                        ><img
+                           src="images/tg-website-small(1).jpeg"
+                           alt="Work image"
+                     /></span>
+                     <span class="work-image" id="tgs-photo-two"
+                        ><img
+                           src="images/tg-wesbite-small(2).jpeg"
+                           alt="Work image"
+                     /></span>
+                  </div>
+                  <div class="work-desc text-preset-4">
+                     <p class="text-preset-4-bold">TG Photography</p>
+                     <p>
+                        Portfolio website showcasing vibrant galleries, team
+                        information, and a minimalist contact form.
+                     </p>
+                  </div>
 
-                    </div>
+                  <div class="works-more-info-container">
+                     <div class="more-info-links-container">
+                        <span class="more-info-link-wrap">
+                           <a
+                              href="https://taniagutti.com/"
+                              class="text-preset-3 hover-underline click"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Visit Website</a
+                           >
+                        </span>
+                     </div>
+                  </div>
+               </div>
 
-                    <div class=" work-images-container">
-                        <span class="work-image" id="memory-desktop-one"><img src="images/memory.png"
-                                alt="Work-image"></span>
-                        <span class="work-image" id="memory-desktop-two"><img src="images/memory(2).png"
-                                alt="Work-image"></span>
-                        <span class="work-image" id="memory-mobile-one"><img src="images/memory-small.png"
-                                alt="Work-image"></span>
-                        <span class="work-image" id="memory-mobile-two"><img src="images/memory-small(2).png"
-                                alt="Work-image"></span>
-                    </div>
-                    <div class="work-desc text-preset-4">
-                        <p class="text-preset-4-bold">
-                            Memory Game
-                        </p>
-                        <p>
-                            Features difficulty levels, score tracking, stopwatch, and a responsive design, while
-                            saving player scores via local storage.
-                        </p>
-                    </div>
+               <!-- Work Number Five (Form)-->
+               <div class="work">
+                  <div class="works-more-info-container">
+                     <div class="tools-used-container">
+                        <img
+                           class="tool-used"
+                           src="icons/css-icon.svg"
+                           alt="CSS logo icon"
+                        />
+                        <img
+                           class="tool-used"
+                           src="icons/html-icon.svg"
+                           alt="HTML logo icon"
+                        />
+                        <img
+                           class="tool-used"
+                           src="icons/js-icon.svg"
+                           alt="JS logo icon"
+                        />
+                     </div>
+                  </div>
 
-                    <div class="works-more-info-container">
-                        <div class="more-info-links-container">
-                            <span class="more-info-link-wrap">
-                                <a href="https://christiannya.github.io/Memory-Game/"
-                                    class="text-preset-3 hover-underline click" target="_blank"
-                                    rel="noopener noreferrer">View More</a>
-                            </span>
-                            <span class="more-info-link-wrap">
-                                <a href="https://github.com/ChristiannYa/Memory-Game/blob/main/script.js"
-                                    class="text-preset-3 hover-underline click" target="_blank"
-                                    rel="noopener noreferrer">View Code</a>
-                            </span>
-                        </div>
-                    </div>
+                  <div class="work-images-container">
+                     <span class="work-image" id="form-photo-one"
+                        ><img src="images/form(1).png" alt="Work image"
+                     /></span>
+                     <span class="work-image" id="form-photo-two"
+                        ><img src="images/form(2).png" alt="Work image"
+                     /></span>
+                  </div>
+                  <div class="work-desc text-preset-4">
+                     <p class="text-preset-4-bold">
+                        Form With Input Verification
+                     </p>
+                     <p>
+                        A dynamic and
+                        <span class="highlight">user-friendly form</span> that
+                        ensures correct data input, providing immediate feedback
+                        to users, and complementing usability and data
+                        integrity.
+                     </p>
+                  </div>
+               </div>
 
-                </div>
+               <!-- Coming Soon Work -->
+               <div class="work" id="last-work">
+                  <div>
+                     <img
+                        id="gear-icon"
+                        src="icons/gear-icon.svg"
+                        alt="In progress icon"
+                     />
+                  </div>
 
-                <!-- Work Number Four (Photgraphy Website) -->
-                <div class="work">
+                  <div class="work-images-container" id="soon">
+                     <!-- <img src="icons/build-icon.svg" alt="Coming Soon"> -->
+                  </div>
+                  <div class="work-desc">
+                     <p class="text-preset-4-bold">Coming Soon...</p>
+                  </div>
+               </div>
+            </div>
+            <!-- Works Wrap -->
+         </div>
+      </section>
 
-                    <div class="works-more-info-container">
-                        <div class="tools-used-container">
-                            <img class="tool-used" src="icons/css-icon.svg" alt="CSS logo icon">
-                            <img class="tool-used" src="icons/html-icon.svg" alt="HTML logo icon">
-                            <img class="tool-used" src="icons/js-icon.svg" alt="JS logo icon">
-                            <img class="tool-used" src="icons/php-icon.svg" alt="JS logo icon">
-                        </div>
-                    </div>
+      <!-- Skills Page -->
+      <section class="page" id="skills-page">
+         <p class="text-preset-6 page-title-m gradient">Skills</p>
+         <!-- Mobile Title -->
 
-                    <div class="work-images-container">
-                        <span class="work-image" id="tg-photo-one"><img src="images/tg-website(1).jpeg"
-                                alt="Work image"></span>
-                        <span class="work-image" id="tg-photo-two"><img src="images/tg-website(2).jpeg"
-                                alt="Work image"></span>
-                        <span class="work-image" id="tgs-photo-one"><img src="images/tg-website-small(1).jpeg"
-                                alt="Work image"></span>
-                        <span class="work-image" id="tgs-photo-two"><img src="images/tg-wesbite-small(2).jpeg"
-                                alt="Work image"></span>
-                    </div>
-                    <div class="work-desc text-preset-4">
-                        <p class="text-preset-4-bold">
-                            TG Photography
-                        </p>
-                        <p>
-                            Portfolio website showcasing vibrant galleries, team information, and a minimalist contact
-                            form.
-                        </p>
-                    </div>
-
-                    <div class="works-more-info-container">
-                        <div class="more-info-links-container">
-                            <span class="more-info-link-wrap">
-                                <a href="https://taniagutti.com/" class="text-preset-3 hover-underline click"
-                                    target="_blank" rel="noopener noreferrer">Visit Website</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Work Number Five (Form)-->
-                <div class="work">
-
-                    <div class="works-more-info-container">
-                        <div class="tools-used-container">
-                            <img class="tool-used" src="icons/css-icon.svg" alt="CSS logo icon">
-                            <img class="tool-used" src="icons/html-icon.svg" alt="HTML logo icon">
-                            <img class="tool-used" src="icons/js-icon.svg" alt="JS logo icon">
-                        </div>
-                    </div>
-
-                    <div class="work-images-container">
-                        <span class="work-image" id="form-photo-one"><img src="images/form(1).png"
-                                alt="Work image"></span>
-                        <span class="work-image" id="form-photo-two"><img src="images/form(2).png"
-                                alt="Work image"></span>
-                    </div>
-                    <div class="work-desc text-preset-4">
-                        <p class="text-preset-4-bold">
-                            Form With Input Verification
-                        </p>
-                        <p>
-                            A dynamic and <span class="highlight">user-friendly form</span> that ensures correct
-                            data
-                            input, providing immediate feedback to users, and complementing usability and data
-                            integrity.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Coming Soon Work -->
-                <div class="work" id="last-work">
-                    <div>
-                        <img id="gear-icon" src="icons/gear-icon.svg" alt="In progress icon">
-                    </div>
-
-                    <div class="work-images-container" id="soon">
-                        <!-- <img src="icons/build-icon.svg" alt="Coming Soon"> -->
-                    </div>
-                    <div class="work-desc">
-                        <p class="text-preset-4-bold">
-                            Coming Soon...
-                        </p>
-                    </div>
-                </div>
-
-            </div> <!-- Works Wrap -->
-        </div>
-    </section>
-
-
-
-
-    <!-- Skills Page -->
-    <section class="page" id="skills-page">
-
-        <p class="text-preset-6 page-title-m gradient">Skills</p> <!-- Mobile Title -->
-
-        <div class="container">
-
+         <div class="container">
             <p class="text-preset-6 page-title gradient">Skills</p>
 
             <div id="cards">
+               <!-- Card Number One -->
+               <div class="card card-one">
+                  <div class="card-content">
+                     <span class="card-title">
+                        <img src="icons/html-icon.svg" alt="HTML logo icon" />
+                        <div class="card-text-wrap">
+                           <p class="text-preset-5 card-text">HTML</p>
+                           <div class="progress-container">
+                              <div class="circular-progress">
+                                 <div class="progress-gradient"></div>
+                                 <span
+                                    class="progress-value percent text-preset-5"
+                                    >100%</span
+                                 >
+                              </div>
+                           </div>
+                        </div>
+                     </span>
+                  </div>
+               </div>
 
-                <!-- Card Number One -->
-                <div class="card card-one">
-                    <div class="card-content">
-                        <span class="card-title">
-                            <img src="icons/html-icon.svg" alt="HTML logo icon">
-                            <div class="card-text-wrap">
-                                <p class="text-preset-5 card-text">HTML</p>
-                                <div class="progress-container">
-                                    <div class="circular-progress">
-                                        <div class="progress-gradient"></div>
-                                        <span class="progress-value percent text-preset-5">100%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                </div>
+               <!-- CSS - Card Number Two -->
+               <div class="card card-two">
+                  <div class="card-content">
+                     <span class="card-title">
+                        <img src="icons/css-icon.svg" alt="CSS logo icon" />
+                        <div class="card-text-wrap">
+                           <p class="text-preset-5 card-text">CSS</p>
+                           <div class="progress-container">
+                              <div class="circular-progress">
+                                 <div class="progress-gradient"></div>
+                                 <span
+                                    class="progress-value percent text-preset-5"
+                                    >100%</span
+                                 >
+                              </div>
+                           </div>
+                        </div>
+                     </span>
+                  </div>
+               </div>
 
+               <!-- JS - Card Number Three -->
+               <div class="card card-three">
+                  <div class="card-content">
+                     <span class="card-title">
+                        <img src="icons/js-icon.svg" alt="JS logo icon" />
+                        <div class="card-text-wrap">
+                           <p class="text-preset-5 card-text">JS</p>
+                           <div class="progress-container">
+                              <div class="circular-progress">
+                                 <div class="progress-gradient"></div>
+                                 <span
+                                    class="progress-value percent text-preset-5"
+                                    >80%</span
+                                 >
+                              </div>
+                           </div>
+                        </div>
+                     </span>
+                  </div>
+               </div>
 
-                <!-- Card Number Two -->
-                <div class="card card-two">
-                    <div class="card-content">
-                        <span class="card-title">
-                            <img src="icons/js-icon.svg" alt="HTML logo icon">
-                            <div class="card-text-wrap">
-                                <p class="text-preset-5 card-text">JS</p>
-                                <div class="progress-container">
-                                    <div class="circular-progress">
-                                        <div class="progress-gradient"></div>
-                                        <span class="progress-value percent text-preset-5">80%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                </div>
+               <!-- React - Card Number Four -->
+               <div class="card card-four">
+                  <div class="card-content">
+                     <span class="card-title">
+                        <img src="icons/react-icon.svg" alt="React logo icon" />
+                        <div class="card-text-wrap">
+                           <p class="text-preset-5 card-text">React</p>
+                           <div class="progress-container">
+                              <div class="circular-progress">
+                                 <div class="progress-gradient"></div>
+                                 <span
+                                    class="progress-value percent text-preset-5"
+                                    >80%</span
+                                 >
+                              </div>
+                           </div>
+                        </div>
+                     </span>
+                  </div>
+               </div>
 
-                <!-- Card Number Three -->
-                <div class="card card-three">
-                    <div class="card-content">
-                        <span class="card-title">
-                            <img src="icons/figma-icon.svg" alt="HTML logo icon">
-                            <div class="card-text-wrap">
-                                <p class="text-preset-5 card-text">Figma</p>
-                                <div class="progress-container">
-                                    <div class="circular-progress">
-                                        <div class="progress-gradient"></div>
-                                        <span class="progress-value percent text-preset-5">90%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                </div>
+               <!-- Github - Card Number Five -->
+               <div class="card card-five">
+                  <div class="card-content">
+                     <span class="card-title">
+                        <img
+                           src="icons/github-icon.svg"
+                           alt="Github logo icon"
+                        />
+                        <div class="card-text-wrap">
+                           <p class="text-preset-5 card-text">Github</p>
+                           <div class="progress-container">
+                              <div class="circular-progress">
+                                 <div class="progress-gradient"></div>
+                                 <span
+                                    class="progress-value percent text-preset-5"
+                                    >85%</span
+                                 >
+                              </div>
+                           </div>
+                        </div>
+                     </span>
+                  </div>
+               </div>
 
-                <!-- Card Number Four -->
-                <div class="card card-four">
-                    <div class="card-content">
-                        <span class="card-title">
-                            <img src="icons/css-icon.svg" alt="HTML logo icon">
-                            <div class="card-text-wrap">
-                                <p class="text-preset-5 card-text">CSS</p>
-                                <div class="progress-container">
-                                    <div class="circular-progress">
-                                        <div class="progress-gradient"></div>
-                                        <span class="progress-value percent text-preset-5">100%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                </div>
+               <!-- PHP- Card Number Six -->
+               <div class="card card-six">
+                  <div class="card-content">
+                     <span class="card-title">
+                        <img src="icons/php-icon.svg" alt="PHP logo icon" />
+                        <div class="card-text-wrap">
+                           <p class="text-preset-5 card-text">PHP</p>
+                           <div class="progress-container">
+                              <div class="circular-progress">
+                                 <div class="progress-gradient"></div>
+                                 <span
+                                    class="progress-value percent text-preset-5"
+                                    >72%</span
+                                 >
+                              </div>
+                           </div>
+                        </div>
+                     </span>
+                  </div>
+               </div>
 
-                <!-- Card Number Five -->
-                <div class="card card-five">
-                    <div class="card-content">
-                        <span class="card-title">
-                            <img src="icons/github-icon.svg" alt="HTML logo icon">
-                            <div class="card-text-wrap">
-                                <p class="text-preset-5 card-text">Github</p>
-                                <div class="progress-container">
-                                    <div class="circular-progress">
-                                        <div class="progress-gradient"></div>
-                                        <span class="progress-value percent text-preset-5">85%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                </div>
+               <!-- Sass - Card Number Seven -->
+               <div class="card card-seven">
+                  <div class="card-content">
+                     <span class="card-title">
+                        <img src="icons/sass-icon.svg" alt="Sass logo icon" />
+                        <div class="card-text-wrap">
+                           <p class="text-preset-5 card-text">Sass</p>
+                           <div class="progress-container">
+                              <div class="circular-progress">
+                                 <div class="progress-gradient"></div>
+                                 <span
+                                    class="progress-value percent text-preset-5"
+                                    >90%</span
+                                 >
+                              </div>
+                           </div>
+                        </div>
+                     </span>
+                  </div>
+               </div>
 
-                <!-- Card Number Six -->
-                <div class="card card-six">
-                    <div class="card-content">
-                        <span class="card-title">
-                            <img src="icons/php-icon.svg" alt="HTML logo icon">
-                            <div class="card-text-wrap">
-                                <p class="text-preset-5 card-text">PHP</p>
-                                <div class="progress-container">
-                                    <div class="circular-progress">
-                                        <div class="progress-gradient"></div>
-                                        <span class="progress-value percent text-preset-5">75%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
-                </div>
+               <!-- Tailwind - Card Number Eight -->
+               <div class="card card-eight">
+                  <div class="card-content">
+                     <span class="card-title">
+                        <img
+                           src="icons/tailwind-icon.svg"
+                           alt="Tailwind logo icon"
+                        />
+                        <div class="card-text-wrap">
+                           <p class="text-preset-5 card-text">Tailwind</p>
+                           <div class="progress-container">
+                              <div class="circular-progress">
+                                 <div class="progress-gradient"></div>
+                                 <span
+                                    class="progress-value percent text-preset-5"
+                                    >90%</span
+                                 >
+                              </div>
+                           </div>
+                        </div>
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <!-- Cards -->
+         </div>
+      </section>
 
-            </div> <!-- Cards -->
-
-        </div>
-    </section>
-
-
-
-
-    <!-- Why Hire Me Page -->
-    <section class="page" id="why-page">
-        <p class="text-preset-6 page-title-m gradient">Why Choose Me?</p>
-        <div class="container">
-            <p class="text-preset-6 page-title gradient">
-                Why Choose Me?
-            </p>
+      <!-- Why Hire Me Page -->
+      <section class="page" id="why-page">
+         <p class="text-preset-6 page-title-m gradient">Why Choose Me?</p>
+         <div class="container">
+            <p class="text-preset-6 page-title gradient">Why Choose Me?</p>
             <div id="why-hero">
-                <p class="text-preset-2">
-                    Your brand shouldn't look like everyone else's. It deserves to stand out in a way that is not
-                    only
-                    functional, but truly <span class="highlight">unique</span>. That's where I come in. I
-                    specialize in
-                    creating custom websites from <span class="highlight">scratch</span>, each one tailored to your
-                    vision, values, and goals.
-                </p>
+               <p class="text-preset-2">
+                  Your brand shouldn't look like everyone else's. It deserves to
+                  stand out in a way that is not only functional, but truly
+                  <span class="highlight">unique</span>. That's where I come in.
+                  I specialize in creating custom websites from
+                  <span class="highlight">scratch</span>, each one tailored to
+                  your vision, values, and goals.
+               </p>
             </div>
+         </div>
+      </section>
 
-        </div>
-    </section>
-
-
-
-
-    <!-- Different Page -->
-    <section class="page" id="different-page">
-        <div class="container">
+      <!-- Different Page -->
+      <section class="page" id="different-page">
+         <div class="container">
             <div id="why-grid">
+               <span class="why-text" id="different-p-one">
+                  <p class="text-preset-2-bold different-p-title">
+                     No Generic Layouts
+                  </p>
+                  <p class="text-preset-2">
+                     Forget cookie-cutter designs. Every website I create is
+                     100% custom-built for <span class="highlight">you</span>.
+                     Ensuring <span class="highlight">your</span> online
+                     presence is as unique as
+                     <span class="highlight">your</span> brand.
+                  </p>
+               </span>
 
-                <span class="why-text" id="different-p-one">
-                    <p class="text-preset-2-bold different-p-title">
-                        No Generic Layouts
-                    </p>
-                    <p class="text-preset-2">
-                        Forget cookie-cutter designs. Every website I create is 100% custom-built
-                        for <span class="highlight">you</span>. Ensuring <span class="highlight">your</span> online
-                        presence is as unique as <span class="highlight">your</span> brand.
-                    </p>
-                </span>
+               <span class="why-text" id="different-p-two">
+                  <p class="text-preset-2-bold different-p-title">Stand Out</p>
+                  <p class="text-preset-2">
+                     My focus is on delivering a one-of-a-kind, creative
+                     experience. Your website will not only function smoothly,
+                     but also reflect the
+                     <span class="highlight">distinct</span> personality of your
+                     brand, making a lasting impression.
+                  </p>
+               </span>
 
-                <span class="why-text" id="different-p-two">
-                    <p class="text-preset-2-bold different-p-title">
-                        Stand Out
-                    </p>
-                    <p class="text-preset-2">
-                        My focus is on delivering a one-of-a-kind, creative experience. Your website will not only
-                        function smoothly, but also reflect the <span class="highlight">distinct</span> personality
-                        of
-                        your brand, making a lasting impression.
-                    </p>
-                </span>
+               <span class="why-text" id="different-p-three">
+                  <p class="text-preset-2-bold different-p-title">
+                     Seamless User Experience
+                  </p>
+                  <p class="text-preset-2">
+                     I prioritize intuitive,
+                     <span class="highlight">user-friendly</span> designs that
+                     keep customers engaged. The result? A website that is both
+                     <span class="highlight">beautiful</span> and
+                     <span class="highlight">easy</span> to navigate.
+                  </p>
+               </span>
 
-                <span class=" why-text" id="different-p-three">
-                    <p class="text-preset-2-bold different-p-title">
-                        Seamless User Experience
-                    </p>
-                    <p class="text-preset-2">
-                        I prioritize intuitive, <span class="highlight">user-friendly</span> designs that keep
-                        customers
-                        engaged. The result? A website that is both <span class="highlight">beautiful</span> and
-                        <span class="highlight">easy</span> to navigate.
-                    </p>
-                </span>
-
-                <span class=" why-text" id="different-p-four">
-                    <p class="text-preset-2-bold different-p-title">
-                        Collaboration
-                    </p>
-                    <p class="text-preset-2">
-                        I believe in working close with you throughout the process, keeping you informed
-                        <span class="highlight">every</span> step of the way. <span class="highlight">Together</span>,
-                        we'll bring your vision to life in a way that feels authentic and true to your brand.
-                    </p>
-                </span>
-
+               <span class="why-text" id="different-p-four">
+                  <p class="text-preset-2-bold different-p-title">
+                     Collaboration
+                  </p>
+                  <p class="text-preset-2">
+                     I believe in working close with you throughout the process,
+                     keeping you informed
+                     <span class="highlight">every</span> step of the way.
+                     <span class="highlight">Together</span>, we'll bring your
+                     vision to life in a way that feels authentic and true to
+                     your brand.
+                  </p>
+               </span>
             </div>
-        </div>
-    </section>
+         </div>
+      </section>
 
-
-
-    <!-- Footer -->
-    <footer id="footer">
-        <div id="social-icons">
+      <!-- Footer -->
+      <footer id="footer">
+         <div id="social-icons">
             <!-- Bottom Icon One -->
             <div class="bicon-wrap" id="bicon-one">
-                <a class="bicon" href="mailto:chris.lopez.webdev@gmail.com" target="_blank" rel="noopener noreferrer"
-                    title="Send an email">
-                    <img src="icons/gmail-icon.svg" alt="Gmail icon">
-                </a>
-                <a class="text-preset-3 bicon-text" href="mailto:chris.lopez.webdev@gmail.com" target="_blank"
-                    rel="noopener noreferrer" title="Send an email">Gmail</a>
+               <a
+                  class="bicon"
+                  href="mailto:chris.lopez.webdev@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Send an email"
+               >
+                  <img src="icons/gmail-icon.svg" alt="Gmail icon" />
+               </a>
+               <a
+                  class="text-preset-3 bicon-text"
+                  href="mailto:chris.lopez.webdev@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Send an email"
+                  >Gmail</a
+               >
             </div>
 
             <!-- Bottom Icon Two -->
             <div class="bicon-wrap" id="bicon-two">
-                <a class="bicon" href=" https://github.com/ChristiannYa" target="_blank" rel="noopener noreferrer">
-                    <img src="icons/github-icon.svg" alt="Github icon">
-                </a>
-                <a class="text-preset-3 bicon-text" href=" https://github.com/ChristiannYa" target="_blank"
-                    rel="noopener noreferrer">Github</a>
+               <a
+                  class="bicon"
+                  href=" https://github.com/ChristiannYa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
+                  <img src="icons/github-icon.svg" alt="Github icon" />
+               </a>
+               <a
+                  class="text-preset-3 bicon-text"
+                  href=" https://github.com/ChristiannYa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github</a
+               >
             </div>
-        </div>
+         </div>
 
-        <div id="finfo-wrapper">
+         <div id="finfo-wrapper">
             <p class="text-preset-3" id="finfo-text">
-                &copy <span id="year"></span> Christian Lopez<span id="bdot">.</span>
+               &copy <span id="year"></span> Christian Lopez<span id="bdot"
+                  >.</span
+               >
             </p>
-            <p class="text-preset-3" id="finfo-text">
-                All Rights Reserved
-            </p>
-        </div>
-    </footer>
-
-
-</body>
-
+            <p class="text-preset-3" id="finfo-text">All Rights Reserved</p>
+         </div>
+      </footer>
+   </body>
 </html>

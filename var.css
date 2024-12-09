@@ -1,52 +1,51 @@
 :root {
-    /* Font Weight */
-    --ff-1: "Roboto Mono", system-ui;
-    --ff-2: "Nunito", sans-serif;
+   /* Font Weight */
+   --ff-1: 'Roboto Mono', system-ui;
+   --ff-2: 'Nunito', sans-serif;
 
-    /* Font Size */
-    --fs-0: .9rem;
-    --fs-1: 1rem;
-    --fs-2: 1.125rem;
-    --fs-3: 1.625rem;
-    --fs-4: 4rem;
+   /* Font Size */
+   --fs-0: 0.9rem;
+   --fs-1: 1rem;
+   --fs-2: 1.125rem;
+   --fs-3: 1.625rem;
+   --fs-4: 4rem;
 
-    /* Font Weight */
-    --fw-1: 400;
-    --fw-2: 600;
-    --fw-3: 700;
+   /* Font Weight */
+   --fw-1: 400;
+   --fw-2: 600;
+   --fw-3: 700;
 
-    /* Background Color */
-    --bc-1: #383A52;
-    --crd-bc: #F3EAEA;
-    --fbc: #4BC2B7;
+   /* Background Color */
+   --bc-1: #2c497f;
+   --crd-bc: #f3eaea;
+   --fbc: #498fbb;
 
-    /* Text Color */
-    --tc-1: #000000;
-    --tc-2: #CFC7C7;
-    --tc-3: #4BC2B7;
-    --tc-4: #A89D8C;
-    --tc-5: rgba(255, 255, 255, 0.3);
+   /* Text Color */
+   --tc-1: #000000;
+   --tc-2: #cfc7c7;
+   --tc-3: #4bc2b7;
+   --tc-4: #a89d8c;
+   --tc-5: rgba(255, 255, 255, 0.3);
 
+   /* Frame Styling */
+   --brd-clr: #000000;
+   --brd-r: 1.25rem;
+   --brd-w: 0.125rem;
 
-    /* Frame Styling */
-    --brd-clr: #000000;
-    --brd-r: 1.25rem;
-    --brd-w: 0.125rem;
+   --wi-w: 22.5rem;
+   --wi-h: 23.75rem;
 
-    --wi-w: 22.5rem;
-    --wi-h: 23.75rem;
+   --wd-w: 22.5rem;
+   --wd-h: 13.125rem;
 
-    --wd-w: 22.5rem;
-    --wd-h: 13.125rem;
+   /* Work Image Frames Desktop */
+   --wifd-w: 17rem;
+   --wifd-h: 12.25rem;
 
-    /* Work Image Frames Desktop */
-    --wifd-w: 17rem;
-    --wifd-h: 12.25rem;
+   /* Work Image Frames Mobile */
+   --wifm-w: 6.25rem;
+   --wifm-h: 10.625rem;
 
-    /* Work Image Frames Mobile */
-    --wifm-w: 6.25rem;
-    --wifm-h: 10.625rem;
-
-    /* Link duration */
-    --link-duration: 400ms;
+   /* Link duration */
+   --link-duration: 400ms;
 }
