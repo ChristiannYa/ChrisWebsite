@@ -160,6 +160,10 @@
       height: 13.75rem;
    }
 
+   #my-frame img {
+      top: -1.6rem;
+   }
+
    #intro-text > p {
       padding: 1rem 0;
    }
