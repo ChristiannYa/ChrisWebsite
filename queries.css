@@ -34,28 +34,6 @@
       padding: 0;
    }
 
-   @keyframes shadowColorChange {
-      0% {
-         box-shadow: 0px 0px 6px 1px #48aaad;
-      }
-
-      25% {
-         box-shadow: 0px 0px 6px 1px #cea2fe;
-      }
-
-      50% {
-         box-shadow: 0px 0px 6px 1px #82eefd;
-      }
-
-      75% {
-         box-shadow: 0px 0px 6px 1px #cea2fd;
-      }
-
-      100% {
-         box-shadow: 0px 0px 6px 1px #48aaad;
-      }
-   }
-
    #nav-as {
       opacity: 0;
       transition: all 0.3s ease;

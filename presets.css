@@ -1,118 +1,115 @@
 /* Hi Heading */
 .text-preset-1 {
-    font-family: var(--ff-2);
-    font-size: var(--fs-4);
-    font-weight: var(--fw-2);
-    text-align: center;
-    color: var(--tc-5);
+   font-family: var(--ff-2);
+   font-size: var(--fs-4);
+   font-weight: var(--fw-2);
+   text-align: center;
+   color: var(--tc-5);
 }
 
 /* Hi Paragraphs */
 .text-preset-2 {
-    font-family: var(--ff-2);
-    font-size: var(--fs-3);
-    font-weight: var(--fw-1);
-    color: var(--tc-5);
-    text-align: center;
+   font-family: var(--ff-2);
+   font-size: var(--fs-3);
+   font-weight: var(--fw-1);
+   color: var(--tc-5);
+   text-align: center;
 }
 
 /* Why Titles */
 .text-preset-2-bold {
-    font-family: var(--ff-2);
-    font-size: var(--fs-3);
-    font-weight: var(--fw-2);
-    color: var(--tc-2);
-    text-align: center;
+   font-family: var(--ff-2);
+   font-size: var(--fs-3);
+   font-weight: var(--fw-2);
+   color: var(--tc-2);
+   text-align: center;
 }
 
 /* Navigation */
 .text-preset-3 {
-    font-family: var(--ff-2);
-    font-size: var(--fs-1);
-    font-weight: var(--fw-1);
-    color: whitesmoke;
+   font-family: var(--ff-2);
+   font-size: var(--fs-1);
+   font-weight: var(--fw-1);
+   color: whitesmoke;
 }
 
 /* Work Title */
 .text-preset-4-bold {
-    font-family: var(--ff-2);
-    font-size: var(--fs-2);
-    font-weight: var(--fw-3);
-    color: var(--tc-2);
-    text-align: center;
+   font-family: var(--ff-2);
+   font-size: var(--fs-2);
+   font-weight: var(--fw-3);
+   color: var(--tc-2);
+   text-align: center;
 }
 
 /* Work Description */
 .text-preset-4 {
-    font-family: var(--ff-2);
-    font-size: var(--fs-2);
-    font-weight: var(--fw-1);
-    color: var(--tc-5);
-    text-align: center;
+   font-family: var(--ff-2);
+   font-size: var(--fs-2);
+   font-weight: var(--fw-1);
+   color: var(--tc-5);
+   text-align: center;
 }
 
 /* Card Titles */
 .text-preset-5 {
-    font-family: var(--ff-1);
-    font-size: var(--fs-1);
-    font-weight: var(--fw-2);
-    color: white;
-    text-align: start;
+   font-family: var(--ff-1);
+   font-size: var(--fs-1);
+   font-weight: var(--fw-2);
+   color: white;
+   text-align: start;
 }
 
 /* Page Titles */
 .text-preset-6 {
-    font-family: var(--ff-2);
-    font-size: var(--fs-4);
-    font-weight: var(--fw-2);
-    color: var(--tc-5);
-    text-align: center;
+   font-family: var(--ff-2);
+   font-size: var(--fs-4);
+   font-weight: var(--fw-2);
+   color: var(--tc-5);
+   text-align: center;
 }
 
 /* Medium-Small Screen Size */
 @media only screen and (max-width: 710px) {
+   /* Navigation */
+   .text-preset-3 {
+      font-size: var(--fs-1);
+   }
 
-    /* Navigation */
-    .text-preset-3 {
-        font-size: var(--fs-1);
-    }
+   /* Hi Heading */
+   .text-preset-1 {
+      /* border: solid 1px red; */
+      font-size: calc(var(--fs-4) - 1rem);
+      text-align: center;
+   }
 
-    /* Hi Heading */
-    .text-preset-1 {
-        /* border: solid 1px red; */
-        font-size: calc(var(--fs-4) - 1rem);
-        text-align: center;
-    }
+   /* Hi Paragraphs */
+   .text-preset-2 {
+      /* border: solid 1px red; */
+      font-size: calc(var(--fs-3) - 0.125rem);
+      color: var(--tc-5);
+      text-align: center;
+   }
 
-    /* Hi Paragraphs */
-    .text-preset-2 {
-        /* border: solid 1px red; */
-        font-size: calc(var(--fs-3) - .125rem);
-        color: var(--tc-5);
-        text-align: center;
-    }
+   /* Why Titles */
+   .text-preset-2-bold {
+      /* border: solid 1px red; */
+      font-size: calc(var(--fs-3) - 0.125rem);
+      text-align: center;
+   }
 
-    /* Why Titles */
-    .text-preset-2-bold {
-        /* border: solid 1px red; */
-        font-size: calc(var(--fs-3) - .125rem);
-        text-align: center;
-    }
-
-    /* Page Titles */
-    .text-preset-6 {
-        font-family: var(--ff-2);
-        font-size: calc(var(--fs-4) - .9rem);
-        text-align: center;
-    }
+   /* Page Titles */
+   .text-preset-6 {
+      font-family: var(--ff-2);
+      font-size: calc(var(--fs-4) - 0.9rem);
+      text-align: center;
+   }
 }
 
 /* Medium-Small Screen Size */
 @media only screen and (max-width: 510px) {
-
-    /* Card Titles */
-    .text-preset-5 {
-        font-size: var(--fs-1);
-    }
-
+   /* Card Titles */
+   .text-preset-5 {
+      font-size: var(--fs-1);
+   }
 }

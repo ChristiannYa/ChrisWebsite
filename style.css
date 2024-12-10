@@ -425,12 +425,11 @@ img {
    bottom: 0;
    background: linear-gradient(
       270deg,
-      #3944bc,
-      #25b2cf,
-      #3944bc,
-      #25b2cf,
-      #3944bc,
-      #25b2cf
+      var(--card-lc-2),
+      var(--card-lc-1),
+      var(--card-lc-2),
+      var(--card-lc-1),
+      var(--card-lc-2)
    );
 
    background-size: 200% 500%;
@@ -446,7 +445,7 @@ img {
    inset: 0;
    background: conic-gradient(
       transparent var(--progress-angle, 0deg),
-      rgba(255, 255, 255, 1) var(--progress-angle, 0deg)
+      var(--crd-bc) var(--progress-angle, 0deg)
    );
    z-index: 1;
 }
@@ -456,14 +455,13 @@ img {
    position: absolute;
    inset: 8%;
 
-   background: rgba(255, 255, 255, 1);
+   background: var(--crd-bc);
 
    border-radius: 50%;
    z-index: 2;
 }
 
 .circular-progress .progress-value {
-   color: #2e3135;
    position: relative;
    z-index: 3;
 }
