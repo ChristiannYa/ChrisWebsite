@@ -219,11 +219,7 @@ img {
 }
 
 .tool-used {
-   /* border: dotted 1px blue; */
-   border: solid calc(var(--brd-w) - 0.02rem) transparent;
-   border-radius: calc(var(--brd-r) - 0.8rem);
-
-   width: 30px;
+   width: 24px;
    aspect-ratio: 1/1;
 }
 
@@ -307,11 +303,6 @@ img {
    height: fit-content;
 
    position: relative;
-}
-
-.work-image-acme {
-   width: 100%;
-   height: 100%;
 }
 
 .work-desc {
@@ -424,10 +415,10 @@ img {
    );
 
    background-size: 200% 500%;
-   -webkit-animation: circleFill 9s ease infinite;
-   -moz-animation: circleFill 9s ease infinite;
-   -o-animation: circleFill 9s ease infinite;
-   animation: circleFill 9s ease infinite;
+   -webkit-animation: circleFill 7s ease infinite;
+   -moz-animation: circleFill 7s ease infinite;
+   -o-animation: circleFill 7s ease infinite;
+   animation: circleFill 7s ease infinite;
 }
 
 .circular-progress::before {
