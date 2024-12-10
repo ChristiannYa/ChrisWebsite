@@ -96,5 +96,5 @@ document.addEventListener('DOMContentLoaded', () => {
    // Automatic year change //
    // --------------------- //
    const yearSpan = document.getElementById('year');
-   yearSpan.textContent = new Date().getFullYear();
+   yearSpan.textContent = `${new Date().getFullYear()}.`;
 });

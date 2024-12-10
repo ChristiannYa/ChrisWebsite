@@ -170,7 +170,7 @@ img {
 }
 
 #my-frame {
-   background-color: #a89d8c;
+   background-color: transparent;
    border: none;
    border-radius: calc(var(--brd-r) * 10);
 
@@ -196,19 +196,14 @@ img {
 }
 
 #works-wrap {
-   /* border: solid 1px red; */
    margin-top: 1.5rem;
    gap: 2rem 3rem;
 
    display: grid;
-   justify-items: center;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-auto-rows: auto;
-   top: 0;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .works-more-info-container {
-   /* border: solid 1px blue; */
    width: 100%;
 
    display: flex;
@@ -292,8 +287,6 @@ img {
 
 .work {
    /* border: solid 1px purple; */
-   width: 100%;
-   height: fit-content;
    gap: 0.625rem 0;
 
    display: flex;
@@ -321,11 +314,8 @@ img {
 }
 
 .work-desc {
-   border-radius: var(--brd-r);
-
-   width: var(--wd-w);
-   height: fit-content;
-   padding: 0.5rem 0.5rem 0 0.5rem;
+   width: 100%;
+   padding: 0.5rem;
    gap: 0.25rem 0;
 
    display: flex;
@@ -389,7 +379,7 @@ img {
 }
 
 .card-title img {
-   min-width: 2.5rem;
+   min-width: 2.6rem;
 }
 
 .card-text-wrap {
@@ -408,8 +398,8 @@ img {
 
 .circular-progress {
    position: relative;
-   width: 3.2rem;
-   height: 3.2rem;
+   width: 3.3rem;
+   height: 3.3rem;
    border-radius: 50%;
    display: flex;
    justify-content: center;
@@ -520,12 +510,12 @@ img {
 
 #why-grid {
    display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   gap: 0 1rem;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 1.2rem 2rem;
 }
 
 .why-text > p:nth-child(1) {
-   text-align: start;
+   text-align: center;
    height: 5rem;
 
    align-content: center;
@@ -533,7 +523,7 @@ img {
 }
 
 .why-text > p:nth-child(2) {
-   text-align: start;
+   text-align: center;
 }
 
 /* Footer Section */

@@ -2,13 +2,6 @@
    .container {
       width: 95%;
    }
-
-   /* Work Page */
-   #works-wrap {
-      grid-template-columns: 23rem 23rem;
-
-      gap: 3rem 7rem;
-   }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -125,55 +118,9 @@
       height: 26.75rem;
    }
 
-   /* Works Page */
-   #works-wrap {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2.5rem 3rem;
-   }
-
-   .work-desc {
-      width: 100%;
-   }
-
-   .work-images-container {
-      width: 100%;
-   }
-
    /* Skills Page */
    #skills-page {
       height: fit-content;
-   }
-
-   /* Different Page */
-
-   #why-grid {
-      gap: 1rem;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-   }
-
-   .why-text {
-      height: fit-content;
-
-      display: flex;
-      flex-direction: column;
-      position: relative;
-   }
-
-   #different-p-one {
-      grid-area: 1 / 1 / 2 / 3;
-   }
-
-   #different-p-two {
-      grid-area: 1 / 3 / 2 / 5;
-   }
-
-   #different-p-three {
-      grid-area: 2 / 1 / 3 / 3;
-   }
-
-   #different-p-four {
-      grid-area: 2 / 3 / 3 / 5;
    }
 }
 
@@ -209,8 +156,8 @@
    }
 
    #my-frame {
-      width: 270px;
-      height: 277px;
+      width: 13.125rem;
+      height: 13.75rem;
    }
 
    #intro-text > p {
@@ -246,12 +193,7 @@
    .work {
       flex: 0 0 100%;
       scroll-snap-align: center;
-      width: calc(100% - 2rem);
       max-width: 23rem;
-   }
-
-   .work-desc {
-      width: 100%;
    }
 
    #first-work {
@@ -262,16 +204,12 @@
       margin-right: 10rem;
    }
 
-   .work-images-container {
-      width: 100%;
-   }
-
    /* Skills Page */
    #skills-page {
       flex-direction: column;
    }
 
-   /* Why Hire Me Page */
+   /* Why Me Page */
    #why-page .page-title-m {
       font-size: 2.8rem;
    }
@@ -280,23 +218,7 @@
       text-align: center;
    }
 
-   /* Different Page */
-   #why-grid {
-      gap: 1rem 0;
-
-      display: flex;
-      flex-direction: column;
-   }
-
    .why-text > p:nth-child(1) {
-      text-align: center;
-
-      height: fit-content;
-   }
-
-   .why-text > p:nth-child(2) {
-      text-align: center;
-
       height: fit-content;
    }
 
