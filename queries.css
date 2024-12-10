@@ -153,10 +153,6 @@
       gap: 2.5rem 3rem;
    }
 
-   .work {
-      width: 100%;
-   }
-
    .work-desc {
       width: 100%;
    }
@@ -222,7 +218,6 @@
    }
 
    /* Landing Page */
-
    #intro-container {
       flex-direction: column-reverse;
    }

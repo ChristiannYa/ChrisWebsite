@@ -32,19 +32,12 @@
    --brd-r: 1.25rem;
    --brd-w: 0.125rem;
 
-   --wi-w: 22.5rem;
-   --wi-h: 23.75rem;
-
    --wd-w: 22.5rem;
    --wd-h: 13.125rem;
 
    /* Work Image Frames Desktop */
    --wifd-w: 17rem;
    --wifd-h: 12.25rem;
-
-   /* Work Image Frames Mobile */
-   --wifm-w: 6.25rem;
-   --wifm-h: 10.625rem;
 
    /* Link duration */
    --link-duration: 400ms;
